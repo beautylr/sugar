@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+<head>
+{% if 0 == stop %}
+<meta http-equiv="refresh" content="2;url={{ url_for('obu_data') }}">
+{% endif %}
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<title>智能网联汽车封闭测试区云平台</title>
+<link type="text/css" rel="stylesheet" href="static/css/style.css" />
+
+<script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="static/js/menu.js"></script>
+<script type="text/javascript" src="static/js/select.js"></script>
+<script type="text/javascript" src="static/js/echarts.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+<div class="top"></div>
+<div id="header">
+	<div class="logo">智能网联汽车封闭测试区云平台</div>
+	<div class="navigation">
+		<ul>
+		 	<li>欢迎您！</li>
+			<li>{{user}}</li>
+			<li><a href="">修改密码</a></li>
+			<li><a href=""></a></li>
+			<li><a href="/">退出</a></li>
+		</ul>
+	</div>
+</div>
+<div id="content">
+	<div class="left_menu">
+	<ul id="nav_dot">
+        <li>
+          <h4 class="M1"><span></span>测试场地</h4>
+          <div class="list-item none">
+            <div class="" ><a href='../map_video' >地图构建</a></div>
+          </div>
+        </li>
+        <li>
+          <h4 class="M2"><span></span>测试场景</h4>
+          <div class="list-item none">
+            <div class="tra_color" ><a href='../scene1' >交通标志标线识别响应</a></div>
+            <div class="err_color" ><a href='../scene2'>交通信号灯识别及响应</a></div>
+            <div class="err_color" ><a href='../scene3'>前方车辆行驶状态识别</a></div>
+            <div class="err_color"><a href='../scene4'>障碍物识别及响应</a></div>
+            <div class="err_color"><a href='../scene5'>行人和非机动车识别避让</a></div>
+            <div class="err_color"><a href='../scene6'>跟车行驶</a></div>
+            <div class="err_color"><a href='../scene7'>靠路边停车</a></div>
+            <div class="err_color"><a href='../scene8'>超车</a></div>
+            <div class="err_color"><a href='../scene9'>并道</a></div>
+            <div class="err_color"><a href='../scene10'>交叉路口通行</a></div>
+            <div class="err_color"><a href='../scene11'>环形路口通行</a></div>
+            <div class="err_color"><a href='../scene12'>自动紧急制动</a></div>
+           </div>
+        </li>
+        <li>
+          <h4 class="M3"><span></span>车辆行驶参数</h4>
+          <div class="list-item none">
+            <div class="tra_color"><a href='../get_data'>OBU数据</a></div>
+            <div class="map"><a href='../map'>地图显示</a></div>
+            <div class="tra_color"><a href='../trajectory'>行驶轨迹</a></div>
+            <div class="err_color"><a href='../error'>误差分析</a></div>
+
+          </div>
+        </li>
+				<li>
+          <h4 class="M4"><span></span>测试与评价</h4>
+          <div class="list-item none">
+            <a href='../test_grade'>评分机制</a>
+          </div>
+        </li>
+
+    </ul>
+		</div>
+
+                {% block content %}
+
+                {% endblock %}
+
+
+</div>
+
+<div id="footer"><p>Copyright©  2020 版权所有 <a href="http://www.tsari.tsinghua.edu.cn/" target="_blank">清华大学苏州汽车研究院（相城） </a></p></div>
+<script>navList(12);</script>
+</body>
+</html>

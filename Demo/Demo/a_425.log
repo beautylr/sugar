@@ -1,0 +1,1166 @@
+------------------------------------ 
+OBUServer host:172.20.20.10/port:10001 started listen... 
+------------------------------------ 
+OBUServer host:172.20.20.10/port:10001 started listen... 
+Accept new connection from 0/('172.20.20.10', 59876) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-1, started 32132)>, <Thread(Thread-2, started 30256)>] 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x00\x01\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n\r\x83' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x03\x00(\t\xec\xd2\xd0Pm)^@\x11\xd3\xeb\x81\x1c\xb5v?@\x19\x00\x00\x00\x00\xb0R.@0\x88\xf5\xe8\xdb\xa1^8\nX\x02\xff\x9a' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433168196	10	2	0.0	120.6472971	31.46370104	15.1614990234375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x08\x00(\t{L\xe6Pm)^@\x11\xd3\xeb\x81\x1c\xb5v?@\x19\x00\x00\x00\x00PQ.@0\xec\x84\xe9\xdb\xa1^8\nX\x02H\xca' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433169206	10	2	0.0	120.64729712	31.46370104	15.1588134765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\r\x00(\t\x98?\x11Qm)^@\x11\xd3\xeb\x81\x1c\xb5v?@\x19\x00\x00\x00\x00 Q.@0\xbe\x94\xe9\xdb\xa1^8\nX\x02\x11\xf8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433170207	10	2	0.0	120.64729716	31.46370104	15.158447265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x12\x00(\tE\xacQQm)^@\x11\x97\x05,\x1c\xb5v?@\x19\x00\x00\x00\x00HP.@0\x92\xa4\xe9\xdb\xa1^8\nX\x02\x12v' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433171209	10	2	0.0	120.64729722	31.46370102	15.15679931640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x17\x00(\t\ri\\Qm)^@\x11\\\x1f\xd6\x1b\xb5v?@\x19\x00\x00\x00\x00\xb8N.@0\xee\xb3\xe9\xdb\xa1^8\nX\x02\xc9\xe2' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433172215	10	2	0.0	120.64729723	31.463701	15.15374755859375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x1c\x00(\t*\\\x87Qm)^@\x11\x03FU\x1b\xb5v?@\x19\x00\x00\x00\x00\xa8O.@0\xc2\xc3\xe9\xdb\xa1^8\nX\x02\xe6b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433173217	10	2	0.0	120.64729727	31.46370097	15.15557861328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00!\x00(\t\xd7\xc8\xc7Qm)^@\x11\xa9l\xd4\x1a\xb5v?@\x19\x00\x00\x00\x00\x08P.@0\x96\xd3\xe9\xdb\xa1^8\nX\x02i*' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433174219	10	2	0.0	120.64729733	31.46370094	15.15631103515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00&\x00(\tfB\xddQm)^@\x11n\x86~\x1a\xb5v?@\x19\x00\x00\x00\x00pQ.@0\xe8\xe2\xe9\xdb\xa1^8\nX\x02\xd3\x1c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433175220	10	2	0.0	120.64729735	31.46370092	15.1590576171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00+\x00(\t-\xff\xe7Qm)^@\x112\xa0(\x1a\xb5v?@\x19\x00\x00\x00\x00(R.@0\xbc\xf2\xe9\xdb\xa1^8\nX\x02\xfeo' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433176222	10	2	0.0	120.64729736	31.4637009	15.16046142578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x000\x00(\t\x845\x08Rm)^@\x11\xf7\xb9\xd2\x19\xb5v?@\x19\x00\x00\x00\x00\x00S.@0\x94\xc4\xe9\xdb\xa1^8\nX\x02\xbb\xa0' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433173258	10	2	0.0	120.64729739	31.46370088	15.162109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x005\x00(\t\xf8^SRm)^@\x11\x9d\xe0Q\x19\xb5v?@\x19\x00\x00\x00\x00\xc8T.@0\xe8\xd3\xe9\xdb\xa1^8\nX\x023E' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433174260	10	2	0.0	120.64729746	31.46370085	15.16558837890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00:\x00(\t\x15R~Rm)^@\x11D\x07\xd1\x18\xb5v?@\x19\x00\x00\x00\x00XV.@0\xba\xe3\xe9\xdb\xa1^8\nX\x02\xdc\xfe' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433175261	10	2	0.0	120.6472975	31.46370082	15.16864013671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00?\x00(\t3E\xa9Rm)^@\x11&\x14\xa6\x18\xb5v?@\x19\x00\x00\x00\x00\xd0U.@0\x8e\xf3\xe9\xdb\xa1^8\nX\x02\xc2\x9f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433176263	10	2	0.0	120.64729754	31.46370081	15.1676025390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00D\x00(\t\x18\xf5\xdeRm)^@\x11\t!{\x18\xb5v?@\x19\x00\x00\x00\x00HW.@0\xe0\x82\xea\xdb\xa1^8\nX\x02\xb8\x0f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433177264	10	2	0.0	120.64729759	31.4637008	15.17047119140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00I\x00(\t\xfe\xa4\x14Sm)^@\x11\xcd:%\x18\xb5v?@\x19\x00\x00\x00\x00(X.@0\xb4\x92\xea\xdb\xa1^8\nX\x02\x80O' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433178266	10	2	0.0	120.64729764	31.46370078	15.17218017578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00N\x00(\t\xe0\xb1\xe9Rm)^@\x11\t!{\x18\xb5v?@\x19\x00\x00\x00\x00PV.@0\x86\xa2\xea\xdb\xa1^8\nX\x02J\xf7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433179267	10	2	0.0	120.6472976	31.4637008	15.1685791015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00S\x00(\tQ8\xd4Rm)^@\x11D\x07\xd1\x18\xb5v?@\x19\x00\x00\x00\x00\xf8S.@0\xda\xb1\xea\xdb\xa1^8\nX\x02\xd5+' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433180269	10	2	0.0	120.64729758	31.46370082	15.16400146484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00X\x00(\tQ8\xd4Rm)^@\x11&\x14\xa6\x18\xb5v?@\x19\x00\x00\x00\x008T.@0\xac\xc1\xea\xdb\xa1^8\nX\x022K' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433181270	10	2	0.0	120.64729758	31.46370081	15.16448974609375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00]\x00(\t\xfb\x01\xb4Rm)^@\x11\xeb-P\x18\xb5v?@\x19\x00' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	120.64729755	31.46370079	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x00\x00\x00\x98R.@0\x80\xd1\xea\xdb\xa1^8\nX\x02\xc2\xdf' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00b\x00(\tQ8\xd4Rm)^@\x11\xcd:%\x18\xb5v?@\x19\x00\x00\x00\x00XS.@0\xd2\xe0\xea\xdb\xa1^8\nX\x02\xcbr' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433183273	10	2	0.0	120.64729758	31.46370078	15.16278076171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00g\x00(\t\x8d\x1e*Sm)^@\x11Vny\x17\xb5v?@\x19\x00\x00\x00\x00XS.@0\xa6\xf0\xea\xdb\xa1^8\nX\x02\xc9\xd7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433184275	10	2	0.0	120.64729766	31.46370074	15.16278076171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00l\x00(\t\x90\xc1\x8aSm)^@\x118{N\x17\xb5v?@\x19\x00\x00\x00\x00\x80T.@0\xf8\xff\xea\xdb\xa1^8\nX\x02We' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433185276	10	2	0.0	120.64729775	31.46370073	15.1650390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00q\x00(\t!\xde\x00Tm)^@\x11\xfd\x94\xf8\x16\xb5v?@\x19\x00\x00\x00\x00 V.@0\xcc\x8f\xeb\xdb\xa1^8\nX\x02\xd3j' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433186278	10	2	0.0	120.64729786	31.46370071	15.168212890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00v\x00(\t!\xde\x00Tm)^@\x11\xdf\xa1\xcd\x16\xb5v?@\x19\x00\x00\x00\x00\x98U.@0\x9e\x9f\xeb\xdb\xa1^8\nX\x02#W' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433187279	10	2	0.0	120.64729786	31.4637007	15.16717529296875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00{\x00(\tx\x14!Tm)^@\x11\xa3\xbbw\x16\xb5v?@\x19\x00\x00\x00\x00pT.@0\xf2\xae\xeb\xdb\xa1^8\nX\x02\x8aC' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433188281	10	2	0.0	120.64729789	31.46370068	15.1649169921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x80\x00(\tx\x14!Tm)^@\x11h\xd5!\x16\xb5v?@\x19\x00\x00\x00\x00\xb0S.@0\xc4\xbe\xeb\xdb\xa1^8\nX\x02\x19-' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433189282	10	2	0.0	120.64729789	31.46370066	15.1634521484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x85\x00(\t?\xd1+Tm)^@\x11h\xd5!\x16\xb5v?@\x19\x00\x00\x00\x00\xd8R.@0\x98\xce\xeb\xdb\xa1^8\nX\x02O1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433190284	10	2	0.0	120.6472979	31.46370066	15.16180419921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x8a\x00(\t\x07\x8e6Tm)^@\x11J\xe2\xf6\x15\xb5v?@\x19\x00\x00\x00\x00\x90Q.@0\xea\xdd\xeb\xdb\xa1^8\nX\x02\xd7\x19' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433191285	10	2	0.0	120.64729791	31.46370065	15.1593017578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\x8f\x00(\t{\xb7\x81Tm)^@\x11\xd3\x15K\x15\xb5v?@\x19\x00\x00\x00\x00\xb0P.@0\xbe\xed\xeb\xdb\xa1^8\nX\x02\xaf0' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433192287	10	2	0.0	120.64729798	31.46370061	15.1575927734375	0.0	0	0	0.0	 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-1, started 32132)>, <Thread(Thread-2, started 30256)>, <Thread(Thread-3, started 33844)>, <Thread(Thread-4, started 29460)>] 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x00\x9e\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\nyW' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xa5\x00(\tK]\xaeUm)^@\x11\x8c\xa3r\x13\xb5v?@\x19\x00\x00\x00\x00\x18T.@0\x8a\xac\xec\xdb\xa1^8\nX\x02x\xbf' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433196293	10	2	0.0	120.64729826	31.4637005	15.16424560546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xaa\x00(\t\x87C\x04Vm)^@\x11\x8c\xa3r\x13\xb5v?@\x19\x00\x00\x00\x00\xc0V.@0\xdc\xbb\xec\xdb\xa1^8\nX\x02\x07\xd0' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433197294	10	2	0.0	120.64729834	31.4637005	15.16943359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xaf\x00(\t3\xb0DVm)^@\x11P\xbd\x1c\x13\xb5v?@\x19\x00\x00\x00\x00\x80W.@0\xb0\xcb\xec\xdb\xa1^8\nX\x02\xe0\x92' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433198296	10	2	0.0	120.6472984	31.46370048	15.1708984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xb4\x00(\t\xfblOVm)^@\x112\xca\xf1\x12\xb5v?@\x19\x00\x00\x00\x00\xc8X.@0\x82\xdb\xec\xdb\xa1^8\nX\x02\xb6!' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433199297	10	2	0.0	120.64729841	31.46370047	15.17340087890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xb9\x00(\tQ\xa3oVm)^@\x11\x14\xd7\xc6\x12\xb5v?@\x19\x00\x00\x00\x00HY.@0\xd6\xea\xec\xdb\xa1^8\nX\x02\xfa\xe3' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433200299	10	2	0.0	120.64729844	31.46370046	15.17437744140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xbe\x00(\t\x18`zVm)^@\x112\xca\xf1\x12\xb5v?@\x19\x00\x00\x00\x00\x88Y.@0\xaa\xfa\xec\xdb\xa1^8\nX\x02\xe0\xab' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433201301	10	2	0.0	120.64729845	31.46370047	15.17486572265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xc3\x00(\t\xe0\x1c\x85Vm)^@\x11\xd9\xf0p\x12\xb5v?@\x19\x00\x00\x00\x000X.@0\xfe\x89\xed\xdb\xa1^8\nX\x02\x94\r' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433202303	10	2	0.0	120.64729846	31.46370044	15.1722412109375	0.0	0	0	0.0	 
+Receive message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xc8\x00(\to\x96\x9aVm)^@\x11\x9d\n\x1b\x12\xb5v?@\x19\x00\x00\x00\x00XX.@0\xd0\x99\xed\xdb\xa1^8\nX\x02\x9eM' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433203304	10	2	0.0	120.64729848	31.46370042	15.17254638671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xcd\x00(\tTF\xd0Vm)^@\x11b$\xc5\x11\xb5v?@\x19\x00\x00\x00\x00hW.@0\xa4\xa9\xed\xdb\xa1^8\nX\x02\xc9Z' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433204306	10	2	0.0	120.64729853	31.4637004	15.17071533203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xd2\x00(\t\xaa|\xf0Vm)^@\x11&>o\x11\xb5v?@\x19\x00\x00\x00\x00XX.@0\xf6\xb8\xed\xdb\xa1^8\nX\x02\xa3\xcb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433205307	10	2	0.0	120.64729856	31.46370038	15.17254638671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xd7\x00(\tW\xe90Wm)^@\x11\xafq\xc3\x10\xb5v?@\x19\x00\x00\x00\x00\xc0X.@0\xca\xc8\xed\xdb\xa1^8\nX\x02\xe0\xe0' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433206309	10	2	0.0	120.64729862	31.46370034	15.17333984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xdc\x00(\t<\x99fWm)^@\x11V\x98B\x10\xb5v?@\x19\x00\x00\x00\x00\xe0X.@0\x9c\xd8\xed\xdb\xa1^8\nX\x02(\xa9' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433207310	10	2	0.0	120.64729867	31.46370031	15.173583984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xe1\x00(\t\xcb\x12|Wm)^@\x118\xa5\x17\x10\xb5v?@\x19\x00\x00\x00\x00\xe8X.@0\xf0\xe7\xed\xdb\xa1^8\nX\x02\xb0*' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433208312	10	2	0.0	120.64729869	31.4637003	15.17364501953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xe6\x00(\t!I\x9cWm)^@\x11\xdf\xcb\x96\x0f\xb5v?@\x19\x00\x00\x00\x00HY.@0\xc2\xf7\xed\xdb\xa1^8\nX\x02\x93I' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433209313	10	2	0.0	120.64729872	31.46370027	15.17437744140625	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x00\xeb\x00(\tx\x7f\xbcWm)^@\x11\xdf\xcb\x96\x0f\xb5v?@\x19\x00\x00\x00\x00\x10X.@0\x96\x87\xee\xdb\xa1^8\nX\x021'" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433210315	10	2	0.0	120.64729875	31.46370027	15.1719970703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xf0\x00(\t\xce\xb5\xdcWm)^@\x11\xc1\xd8k\x0f\xb5v?@\x19\x00\x00\x00\x00\xa8V.@0\xe8\x96\xee\xdb\xa1^8\nX\x02\xce\x8d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433211316	10	2	0.0	120.64729878	31.46370026	15.16925048828125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x00\xf5\x00(\t\xb3e\x12Xm)^@\x11\x86\xf2\x15\x0f\xb5v?@\x19\x00\x00\x00\x00`W.@0\xbc\xa6\xee\xdb\xa1^8\nX\x02'\xfe" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433212318	10	2	0.0	120.64729883	31.46370024	15.170654296875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x00\xfa\x00(\t\n\x9c2Xm)^@\x11h\xff\xea\x0e\xb5v?@\x19\x00\x00\x00\x00(W.@0\x90\xb6\xee\xdb\xa1^8\nX\x02%\xdb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433213320	10	2	0.0	120.64729886	31.46370023	15.17022705078125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x00\xff\x00(\t'\x8f]Xm)^@\x11,\x19\x95\x0e\xb5v?@\x19\x00" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	120.6472989	31.46370021	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x00\x00\x00PV.@0\xe2\xc5\xee\xdb\xa1^8\nX\x02\x15\xdf' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x04\x00(\t\x9b\xb8\xa8Xm)^@\x11\x0f&j\x0e\xb5v?@\x19\x00\x00\x00\x00PV.@0\xb6\xd5\xee\xdb\xa1^8\nX\x02\x94\x9f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433215323	10	2	0.0	120.64729897	31.4637002	15.1685791015625	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01\t\x00(\t\x0f\xe2\xf3Xm)^@\x11\xf12?\x0e\xb5v?@\x19\x00\x00\x00\x00\x98V.@0\x8c\xe5\xee\xdb\xa1^8\nX\x02'3" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433216326	10	2	0.0	120.64729904	31.46370019	15.16912841796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x0e\x00(\t\x9e[\tYm)^@\x11\xb5L\xe9\r\xb5v?@\x19\x00\x00\x00\x00\xb8T.@0\xe0\xf4\xee\xdb\xa1^8\nX\x02\xa1G' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433217328	10	2	0.0	120.64729906	31.46370017	15.16546630859375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x13\x00(\t\x9e[\tYm)^@\x11\xb5L\xe9\r\xb5v?@\x19\x00\x00\x00\x00pR.@0\xb6\x84\xef\xdb\xa1^8\nX\x02\x10\x8c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433218331	10	2	0.0	120.64729906	31.46370017	15.1610107421875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x18\x00(\tf\x18\x14Ym)^@\x11\xb5L\xe9\r\xb5v?@\x19\x00\x00\x00\x00XP.@0\x8a\x94\xef\xdb\xa1^8\nX\x02}\xe5' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433219333	10	2	0.0	120.64729907	31.46370017	15.15692138671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x1d\x00(\t\x9e[\tYm)^@\x11zf\x93\r\xb5v?@\x19\x00\x00\x00\x00PN.@0\xe4\xa3\xef\xdb\xa1^8\nX\x02zy' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433220338	10	2	0.0	120.64729906	31.46370015	15.1529541015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01"\x00(\t\xf5\x91)Ym)^@\x11 \x8d\x12\r\xb5v?@\x19\x00\x00\x00\x00\xc8K.@0\xba\xb3\xef\xdb\xa1^8\nX\x02\xb2>' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433221341	10	2	0.0	120.64729909	31.46370012	15.14801025390625	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01'\x00(\tK\xc8IYm)^@\x11\xe5\xa6\xbc\x0c\xb5v?@\x19\x00\x00\x00\x00\x18K.@0\x8e\xc3\xef\xdb\xa1^8\nX\x02y\x19" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433222343	10	2	0.0	120.64729912	31.4637001	15.14666748046875	0.0	0	0	0.0	 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01,\x00(\t\xdaA_Ym)^@\x11\xc7\xb3\x91\x0c\xb5v?@\x19\x00\x00\x00\x00\x88J.@0\xe0\xd2\xef\xdb\xa1^8\nX\x02\xc8\x84' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433223344	10	2	0.0	120.64729914	31.46370009	15.14556884765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x13\x010\x006\n\x00\n\x07\x08\x01\x10\xc5\x04\x188\n\x07\x08\x02 \x85\x01(\x0c\n\x06\x08\x03 n(B\n\x06\x08\x04 \x15(\x16\n\x06\x08\x05 =(\x0e\n\x02\x08\x06\n\x02\x08\x07\x9b1' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x013\x00(\t\xbf\xf1\x94Ym)^@\x11n\xda\x10\x0c\xb5v?@\x19\x00\x00\x00\x00\xd0G.@0\xb6\xe2\xef\xdb\xa1^8\nX\x02P"' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433224347	10	2	0.0	120.64729919	31.46370006	15.1402587890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x018\x00(\t3\x1b\xe0Ym)^@\x112\xf4\xba\x0b\xb5v?@\x19\x00\x00\x00\x00\xc8F.@0\x8c\xf2\xef\xdb\xa1^8\nX\x02?\x12' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433225350	10	2	0.0	120.64729926	31.46370004	15.13824462890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01=\x00(\t\xc2\x94\xf5Ym)^@\x11\x14\x01\x90\x0b\xb5v?@\x19\x00\x00\x00\x00@E.@0\xe2\x81\xf0\xdb\xa1^8\nX\x02&a' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433226353	10	2	0.0	120.64729928	31.46370003	15.13525390625	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01B\x00(\t6\xbe@Zm)^@\x11\xbb'\x0f\x0b\xb5v?@\x19\x00\x00\x00\x00HF.@0\xb6\x91\xf0\xdb\xa1^8\nX\x02\x0ed" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433227355	10	2	0.0	120.64729935	31.4637	15.13726806640625	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01G\x00(\t\xc57VZm)^@\x11\xbb'\x0f\x0b\xb5v?@\x19\x00\x00\x00\x00xE.@0\x88\xa1\xf0\xdb\xa1^8\nX\x02qE" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433228356	10	2	0.0	120.64729937	31.4637	15.13568115234375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01L\x00(\tT\xb1kZm)^@\x11\xd9\x1a:\x0b\xb5v?@\x19\x00\x00\x00\x00pE.@0\xda\xb0\xf0\xdb\xa1^8\nX\x02X\x9f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433229357	10	2	0.0	120.64729939	31.46370001	15.1356201171875	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01Q\x00(\t\xe3*\x81Zm)^@\x11\xbb'\x0f\x0b\xb5v?@\x19\x00\x00\x00\x00\xb8F.@0\xae\xc0\xf0\xdb\xa1^8\nX\x02\x7fZ" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433230359	10	2	0.0	120.64729941	31.4637	15.13812255859375	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x01V\x00(\tr\xa4\x96Zm)^@\x11\xbb'\x0f\x0b\xb5v?@\x19\x00\x00\x00\x00PG.@0\x82\xd0\xf0\xdb\xa1^8\nX\x02\t\n" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433231361	10	2	0.0	120.64729943	31.4637	15.1392822265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01[\x00(\t\x1e\x11\xd7Zm)^@\x11\x80A\xb9\n\xb5v?@\x19\x00\x00\x00\x00@I.@0\xd4\xdf\xf0\xdb\xa1^8\nX\x02NE' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433232362	10	2	0.0	120.64729949	31.46369998	15.14306640625	0.0	0	0	0.0	 
+Accept new connection from 0/('172.20.20.10', 59881) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-3, started 33844)>, <Thread(Thread-4, started 29460)>, <Thread(Thread-5, started 27664)>, <Thread(Thread-6, started 23200)>] 
+Receive message:[WinError 10054] 远程主机强迫关闭了一个现有的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01k\x00(\t\xe9pB[m)^@\x11\xeb\x81\xe2\t\xb5v?@\x19\x00\x00\x00\x00\xa0I.@0\xcc\x8e\xf1\xdb\xa1^8\nX\x02\xf4\x05' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433235366	10	2	0.0	120.64729959	31.46369993	15.143798828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01p\x00(\t\x07dm[m)^@\x11\tu\r\n\xb5v?@\x19\x00\x00\x00\x00pI.@0\xa0\x9e\xf1\xdb\xa1^8\nX\x02\x9fe' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433236368	10	2	0.0	120.64729963	31.46369994	15.1434326171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01u\x00(\t\x95\xdd\x82[m)^@\x11\xeb\x81\xe2\t\xb5v?@\x19\x00\x00\x00\x00\x10J.@0\xf2\xad\xf1\xdb\xa1^8\nX\x02\xca\x8d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433237369	10	2	0.0	120.64729965	31.46369993	15.1446533203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01z\x00(\t{\x8d\xb8[m)^@\x11\xaf\x9b\x8c\t\xb5v?@\x19\x00\x00\x00\x00pH.@0\xc6\xbd\xf1\xdb\xa1^8\nX\x02\xd2n' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433238371	10	2	0.0	120.6472997	31.46369991	15.1414794921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x7f\x00(\t`=\xee[m)^@\x11V\xc2\x0b\t\xb5v?@\x19\x00\x00\x00\x008H.@0\x98\xcd\xf1\xdb\xa1^8\nX\x02\xa0\xa6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433239372	10	2	0.0	120.64729975	31.46369988	15.14105224609375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x84\x00(\t\xb6s\x0e\\m)^@\x11\x1a\xdc\xb5\x08\xb5v?@\x19\x00\x00\x00\x00\x90G.@0\xec\xdc\xf1\xdb\xa1^8\nX\x02O+' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433240374	10	2	0.0	120.64729978	31.46369986	15.1397705078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x89\x00(\tE\xed#\\m)^@\x11\xdf\xf5_\x08\xb5v?@\x19\x00\x00\x00\x00\xb8G.@0\xc0\xec\xf1\xdb\xa1^8\nX\x02\xb3s' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433241376	10	2	0.0	120.6472998	31.46369984	15.14007568359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x8f\x00(\tc\xe0N\\m)^@\x11\xa3\x0f\n\x08\xb5v?@\x19\x00\x00\x00\x00 J.@0\x94\xfc\xf1\xdb\xa1^8\nX\x02\x85W' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433242378	10	2	0.0	120.64729984	31.46369982	15.144775390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x94\x00(\t\x81\xd3y\\m)^@\x11h)\xb4\x07\xb5v?@\x19\x00\x00\x00\x00PL.@0\xe6\x8b\xf2\xdb\xa1^8\nX\x02\x86\xd5' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433243379	10	2	0.0	120.64729988	31.4636998	15.1490478515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x99\x00(\t\x81\xd3y\\m)^@\x11J6\x89\x07\xb5v?@\x19\x00\x00\x00\x00\xf0L.@0\xba\x9b\xf2\xdb\xa1^8\nX\x02*\x9e' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433244381	10	2	0.0	120.64729988	31.46369979	15.1502685546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\x9e\x00(\tf\x83\xaf\\m)^@\x11J6\x89\x07\xb5v?@\x19\x00\x00\x00\x00 O.@0\x8c\xab\xf2\xdb\xa1^8\nX\x02.g' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433245382	10	2	0.0	120.64729993	31.46369979	15.154541015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xa3\x00(\tK3\xe5\\m)^@\x11\x0fP3\x07\xb5v?@\x19\x00\x00\x00\x00\xb0Q.@0\xde\xba\xf2\xdb\xa1^8\nX\x02\xd9\xd8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433246383	10	2	0.0	120.64729998	31.46369977	15.1595458984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xa8\x00(\t\xda\xac\xfa\\m)^@\x11\xf1\\\x08\x07\xb5v?@\x19\x00\x00\x00\x00\xf8Q.@0\xb2\xca\xf2\xdb\xa1^8\nX\x02>\xd1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433247385	10	2	0.0	120.6473	31.46369976	15.16009521484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xad\x00(\t\xbf\\0]m)^@\x11\xb5v\xb2\x06\xb5v?@\x19\x00\x00\x00\x00\x00S.@0\x84\xda\xf2\xdb\xa1^8\nX\x02Nc' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433248386	10	2	0.0	120.64730005	31.46369974	15.162109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xb2\x00(\ti&\x10]m)^@\x11\xf1\\\x08\x07\xb5v?@\x19\x00\x00\x00\x00PO.@0\xda\xe9\xf2\xdb\xa1^8\nX\x02\xc4\\' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433249389	10	2	0.0	120.64730002	31.46369976	15.1549072265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xb7\x00(\t\xbf\\0]m)^@\x11\x97\x83\x87\x06\xb5v?@\x19\x00\x00\x00\x00\xd0M.@0\xae\xf9\xf2\xdb\xa1^8\nX\x02L\xa8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433250391	10	2	0.0	120.64730005	31.46369973	15.1519775390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xbc\x00(\t\x15\x93P]m)^@\x11\\\x9d1\x06\xb5v?@\x19\x00\x00\x00\x00HM.@0\x80\x89\xf3\xdb\xa1^8\nX\x02_(' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433251392	10	2	0.0	120.64730008	31.46369971	15.15093994140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xc1\x00(\t\xfbB\x86]m)^@\x11>\xaa\x06\x06\xb5v?@\x19\x00\x00\x00\x00@M.@0\xd4\x98\xf3\xdb\xa1^8\nX\x02j~' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433252394	10	2	0.0	120.64730013	31.4636997	15.15087890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xc6\x00(\t\xc2\xff\x90]m)^@\x11>\xaa\x06\x06\xb5v?@\x19\x00\x00\x00\x00\x98L.@0\xa6\xa8\xf3\xdb\xa1^8\nX\x02\xb28' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433253395	10	2	0.0	120.64730014	31.4636997	15.14959716796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xcb\x00(\t3\x86{]m)^@\x11>\xaa\x06\x06\xb5v?@\x19\x00\x00\x00\x00\xa0J.@0\xfa\xb7\xf3\xdb\xa1^8\nX\x02l:' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433254397	10	2	0.0	120.64730012	31.4636997	15.145751953125	0.0	0	0	0.0	 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xd0\x00(\t\x8a\xbc\x9b]m)^@\x11>\xaa\x06\x06\xb5v?@\x19\x00\x00\x00\x00HK.@0\xce\xc7\xf3\xdb\xa1^8\nX\x02\x812' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433255399	10	2	0.0	120.64730015	31.4636997	15.14703369140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xd5\x00(\t\xc5\xa2\xf1]m)^@\x11\xc7\xddZ\x05\xb5v?@\x19\x00\x00\x00\x00\x08L.@0\xa6\xd7\xf3\xdb\xa1^8\nX\x02\xe5\r' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433256403	10	2	0.0	120.64730023	31.46369966	15.14849853515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xda\x00(\t\xc5\xa2\xf1]m)^@\x11\xc7\xddZ\x05\xb5v?@\x19\x00\x00\x00\x00\x08K.@0\xfc\xe6\xf3\xdb\xa1^8\nX\x02\xc9U' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433257406	10	2	0.0	120.64730023	31.46369966	15.14654541015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xdf\x00(\t\xe3\x95\x1c^m)^@\x11\x8c\xf7\x04\x05\xb5v?@\x19\x00\x00\x00\x00\xd8L.@0\xd0\xf6\xf3\xdb\xa1^8\nX\x02E\xfd' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433258408	10	2	0.0	120.64730027	31.46369964	15.15008544921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xe5\x00(\t\xad\xf5\x87^m)^@\x11P\x11\xaf\x04\xb5v?@\x19\x00\x00\x00\x00\x90N.@0\xa2\x86\xf4\xdb\xa1^8\nX\x02\xb9>' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433259409	10	2	0.0	120.64730037	31.46369962	15.1534423828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xea\x00(\t\xce\x8b\x13_m)^@\x11\xbbQ\xd8\x03\xb5v?@\x19\x00\x00\x00\x00\xc8R.@0\xf6\x95\xf4\xdb\xa1^8\nX\x02\xca\x9c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433260411	10	2	0.0	120.6473005	31.46369957	15.16168212890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xef\x00(\tB\xb5^_m)^@\x11bxW\x03\xb5v?@\x19\x00\x00\x00\x00\xe0S.@0\xca\xa5\xf4\xdb\xa1^8\nX\x02h\xf8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433261413	10	2	0.0	120.64730057	31.46369954	15.163818359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xf4\x00(\t\xd1.t_m)^@\x11D\x85,\x03\xb5v?@\x19\x00\x00\x00\x00\xc0T.@0\xa0\xb5\xf4\xdb\xa1^8\nX\x02v?' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433262416	10	2	0.0	120.64730059	31.46369953	15.16552734375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xf9\x00(\tcK\xea_m)^@\x11\xeb\xab\xab\x02\xb5v?@\x19\x00\x00\x00\x00\xc8W.@0\xf2\xc4\xf4\xdb\xa1^8\nX\x02m[' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433263417	10	2	0.0	120.6473007	31.4636995	15.17144775390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x01\xfe\x00(\tK\x9e\x80`m)^@\x11t\xdf\xff\x01\xb5v?@\x19\x00\x00\x00\x00\xc0[.@0\xc6\xd4\xf4\xdb\xa1^8\nX\x02\x7f\x01' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433264419	10	2	0.0	120.64730084	31.46369946	15.17919921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x03\x00(\tK\x9e\x80`m)^@\x11t\xdf\xff\x01\xb5v?@\x19\x00\x00\x00\x00\xb0W.@0\x98\xe4\xf4\xdb\xa1^8\nX\x026&' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433265420	10	2	0.0	120.64730084	31.46369946	15.1712646484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x08\x00(\tf\xeeJ`m)^@\x11\x92\xd2*\x02\xb5v?@\x19\x00\x00\x00\x00`U.@0\xec\xf3\xf4\xdb\xa1^8\nX\x02{G' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433266422	10	2	0.0	120.64730079	31.46369947	15.166748046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\r\x00(\t\xf8\n\xc1`m)^@\x118\xf9\xa9\x01\xb5v?@\x19\x00\x00\x00\x00\xa0W.@0\xbe\x83\xf5\xdb\xa1^8\nX\x02{\xeb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433267423	10	2	0.0	120.6473009	31.46369944	15.171142578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x12\x00(\tK\x9e\x80`m)^@\x11\xaf\xc5U\x02\xb5v?@\x19\x00\x00\x00\x00\xe0R.@0\x92\x93\xf5\xdb\xa1^8\nX\x02\x08\xfa' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433268425	10	2	0.0	120.64730084	31.46369948	15.161865234375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x17\x00(\t\xdd\xba\xf6`m)^@\x11\x1a\x06\x7f\x01\xb5v?@\x19\x00\x00\x00\x00\xd0W.@0\xe4\xa2\xf5\xdb\xa1^8\nX\x02++' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433269426	10	2	0.0	120.64730095	31.46369943	15.1715087890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x1c\x00(\t\x15\xfe\xeb`m)^@\x11\x1a\x06\x7f\x01\xb5v?@\x19\x00\x00\x00\x00\x90X.@0\xb8\xb2\xf5\xdb\xa1^8\nX\x02\x88\x00' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433270428	10	2	0.0	120.64730094	31.46369943	15.1729736328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02!\x00(\t\x15\xfe\xeb`m)^@\x11\xdf\x1f)\x01\xb5v?@\x19\x00\x00\x00\x00(Z.@0\x8c\xc2\xf5\xdb\xa1^8\nX\x02\xfb\xe8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433271430	10	2	0.0	120.64730094	31.46369941	15.17608642578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02&\x00(\ti\x91\xab`m)^@\x11\xfd\x12T\x01\xb5v?@\x19\x00\x00\x00\x00\xa0X.@0\xde\xd1\xf5\xdb\xa1^8\nX\x02\xb1\x12' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433272431	10	2	0.0	120.64730088	31.46369942	15.173095703125	0.0	0	0	0.0	 
+Accept new connection from 0/('172.20.20.10', 59882) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-5, started 27664)>, <Thread(Thread-6, started 23200)>, <Thread(Thread-7, started 34636)>, <Thread(Thread-8, started 24288)>] 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x01i\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\nk\xe3' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x022\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n^\xc6' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02;\x00(\t\xa4w\x01am)^@\x11\x0fz\xfc\xff\xb4v?@\x19\x00\x00\x00\x00hY.@0\xaa\x90\xf6\xdb\xa1^8\nX\x02\xef7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433276437	10	2	0.0	120.64730096	31.46369934	15.17462158203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02@\x00(\t3\xf1\x16am)^@\x11\xb5\xa0{\xff\xb4v?@\x19\x00\x00\x00\x00\xa8Y.@0\xfc\x9f\xf6\xdb\xa1^8\nX\x02!3' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433277438	10	2	0.0	120.64730098	31.46369931	15.17510986328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02E\x00(\t97\xd8am)^@\x11\xe5\xfaN\xfe\xb4v?@\x19\x00\x00\x00\x00P^.@0\xd2\xaf\xf6\xdb\xa1^8\nX\x02h\x8c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433278441	10	2	0.0	120.64730116	31.46369924	15.1842041015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02J\x00(\tW*\x03bm)^@\x11\xc7\x07$\xfe\xb4v?@\x19\x00\x00\x00\x00\xd0\\.@0\xa4\xbf\xf6\xdb\xa1^8\nX\x02\xdfC' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433279442	10	2	0.0	120.6473012	31.46369923	15.1812744140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02O\x00(\t\x1e\xe7\rbm)^@\x11n.\xa3\xfd\xb4v?@\x19\x00\x00\x00\x00\x90Z.@0\xf8\xce\xf6\xdb\xa1^8\nX\x02\r\x1b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433280444	10	2	0.0	120.64730121	31.4636992	15.1768798828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02T\x00(\tZ\xcdcbm)^@\x11\xf7a\xf7\xfc\xb4v?@\x19\x00\x00\x00\x00\x90Z.@0\xca\xde\xf6\xdb\xa1^8\nX\x02\x80\r' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433281445	10	2	0.0	120.64730129	31.46369916	15.1768798828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02Y\x00(\t\xb0\x03\x84bm)^@\x11\xbb{\xa1\xfc\xb4v?@\x19\x00\x00\x00\x00PZ.@0\x9e\xee\xf6\xdb\xa1^8\nX\x02\x98\xba' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433282447	10	2	0.0	120.64730132	31.46369914	15.1763916015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02^\x00(\t\xb3\xa6\xe4bm)^@\x11b\xa2 \xfc\xb4v?@\x19\x00\x00\x00\x000].@0\xf0\xfd\xf6\xdb\xa1^8\nX\x02\x8b6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433283448	10	2	0.0	120.64730141	31.46369911	15.1820068359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02d\x00(\t~\x06Pcm)^@\x11\t\xc9\x9f\xfb\xb4v?@\x19\x00\x00\x00\x00\xa8_.@0\xc4\x8d\xf7\xdb\xa1^8\nX\x02:\x19' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433284450	10	2	0.0	120.64730151	31.46369908	15.18682861328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x13\x02f\x008\n\x00\n\x07\x08\x01\x10\xab\t\x18v\n\x07\x08\x02 \x8b\x02(\x18\n\x08\x08\x03 \xdc\x01(\x86\x01\n\x06\x08\x04 ;(@\n\x06\x08\x05 z(\x1c\n\x02\x08\x06\n\x02\x08\x07\xfe=' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02j\x00(\tc\xb6\x85cm)^@\x11\t\xc9\x9f\xfb\xb4v?@\x19\x00\x00\x00\x00H_.@0\x96\x9d\xf7\xdb\xa1^8\nX\x02\x95u' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433285451	10	2	0.0	120.64730156	31.46369908	15.18609619140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02o\x00(\tE\xc3Zcm)^@\x11D\xaf\xf5\xfb\xb4v?@\x19\x00\x00\x00\x00\x98].@0\xea\xac\xf7\xdb\xa1^8\nX\x02+D' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433286453	10	2	0.0	120.64730152	31.4636991	15.18280029296875	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x02u\x00(\t\x0c\x80ecm)^@\x11D\xaf\xf5\xfb\xb4v?@\x19\x00\x00\x00\x008].@0\xae\xbd\xf7\xdb\xa1^8\nX\x02\xc7'" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433287511	10	2	0.0	120.64730153	31.4636991	15.18206787109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02z\x00(\t*s\x90cm)^@\x11b\xa2 \xfc\xb4v?@\x19\x00\x00\x00\x00P^.@0\x80\xcd\xf7\xdb\xa1^8\nX\x02\x8a\x98' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433288512	10	2	0.0	120.64730157	31.46369911	15.1842041015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x7f\x00(\ti\xfcFdm)^@\x11\xaf\xef\x1e\xfb\xb4v?@\x19\x00\x00\x00\x00\x08c.@0\xd4\xdc\xf7\xdb\xa1^8\nX\x02E\x8a' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433289514	10	2	0.0	120.64730174	31.46369905	15.19342041015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x84\x00(\t\xbf2gdm)^@\x11\xaf\xef\x1e\xfb\xb4v?@\x19\x00\x00\x00\x00\xa8b.@0\xa6\xec\xf7\xdb\xa1^8\nX\x02\xde\xb1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433290515	10	2	0.0	120.64730177	31.46369905	15.19268798828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x89\x00(\t\x8a\x92\xd2dm)^@\x11t\t\xc9\xfa\xb4v?@\x19\x00\x00\x00\x00Xe.@0\xfa\xfb\xf7\xdb\xa1^8\nX\x02\xc2\xe1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433291517	10	2	0.0	120.64730187	31.46369903	15.19793701171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	0.0	0.0	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x02\x8e\x00(\t\xc5x(em)^@\x118#s\xfa\xb4v?@\x19\x00\x00\x00\x00\xc8f.@0\xcc\x8b\xf8\xdb\xa1^8\nX\x02q\x02' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x93\x00(\t\xaa(^em)^@\x118#s\xfa\xb4v?@\x19\x00\x00\x00\x00\x80d.@0\xa0\x9b\xf8\xdb\xa1^8\nX\x02!\xa5' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433293520	10	2	0.0	120.647302	31.46369901	15.1962890625	0.0	0	0	0.0	 
+Receive message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x98\x00(\t\xc5x(em)^@\x11V\x16\x9e\xfa\xb4v?@\x19\x00\x00\x00\x00\xf8a.@0\xf4\xaa\xf8\xdb\xa1^8\nX\x02\x83\xa6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433294522	10	2	0.0	120.64730195	31.46369902	15.19134521484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\x9d\x00(\t\x18\x0c\xe8dm)^@\x11\x92\xfc\xf3\xfa\xb4v?@\x19\x00\x00\x00\x00X\\.@0\xc6\xba\xf8\xdb\xa1^8\nX\x02\xc3\xd1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433295523	10	2	0.0	120.64730189	31.46369904	15.18035888671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xa2\x00(\t\xa7\x85\xfddm)^@\x11t\t\xc9\xfa\xb4v?@\x19\x00\x00\x00\x00\x90Z.@0\x9a\xca\xf8\xdb\xa1^8\nX\x02\x91\x92' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433296525	10	2	0.0	120.64730191	31.46369903	15.1768798828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xa7\x00(\t\xc5x(em)^@\x11\x1a0H\xfa\xb4v?@\x19\x00\x00\x00\x00@[.@0\xec\xd9\xf8\xdb\xa1^8\nX\x02\xc1o' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433297526	10	2	0.0	120.64730195	31.463699	15.17822265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xac\x00(\t9\xa2sem)^@\x11\xdfI\xf2\xf9\xb4v?@\x19\x00\x00\x00\x00P].@0\xc0\xe9\xf8\xdb\xa1^8\nX\x02\xc6K' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433298528	10	2	0.0	120.64730202	31.46369898	15.1822509765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xb1\x00(\t\x1b\xafHem)^@\x11\x1a0H\xfa\xb4v?@\x19\x00\x00\x00\x00XZ.@0\xa0\xf9\xf8\xdb\xa1^8\nX\x02\xc5\x01' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433299536	10	2	0.0	120.64730198	31.463699	15.17645263671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xb6\x00(\t\xe3kSem)^@\x11\xfd<\x1d\xfa\xb4v?@\x19\x00\x00\x00\x00\x80Z.@0\xf4\x88\xf9\xdb\xa1^8\nX\x02U\xa5' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433300538	10	2	0.0	120.64730199	31.46369899	15.1767578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xbb\x00(\tr\xe5hem)^@\x11\xdfI\xf2\xf9\xb4v?@\x19\x00\x00\x00\x00\xf8Z.@0\xc6\x98\xf9\xdb\xa1^8\nX\x02\xc8\xeb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433301539	10	2	0.0	120.64730201	31.46369898	15.17767333984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xc0\x00(\t\xc8\x1b\x89em)^@\x11\xfd<\x1d\xfa\xb4v?@\x19\x00\x00\x00\x00 Z.@0\x9a\xa8\xf9\xdb\xa1^8\nX\x02!\xa2' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433302541	10	2	0.0	120.64730204	31.46369899	15.176025390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xc5\x00(\t!\xf5\tfm)^@\x11h}F\xf9\xb4v?@\x19\x00\x00\x00\x00\x10].@0\xec\xb7\xf9\xdb\xa1^8\nX\x02G\x83' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433303542	10	2	0.0	120.64730216	31.46369894	15.1817626953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xca\x00(\t\xceaJfm)^@\x11J\x8a\x1b\xf9\xb4v?@\x19\x00\x00\x00\x00\xf0\\.@0\xc0\xc7\xf9\xdb\xa1^8\nX\x02\xfa\xe7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433304544	10	2	0.0	120.64730222	31.46369893	15.1815185546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xcf\x00(\tx+*fm)^@\x11h}F\xf9\xb4v?@\x19\x00\x00\x00\x00\xd8[.@0\x94\xd7\xf9\xdb\xa1^8\nX\x02\xfbH' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433305546	10	2	0.0	120.64730219	31.46369894	15.17938232421875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xd4\x00(\t\xb0n\x1ffm)^@\x11\xa3c\x9c\xf9\xb4v?@\x19\x00\x00\x00\x00\xf0Y.@0\xe6\xe6\xf9\xdb\xa1^8\nX\x026\x13' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433306547	10	2	0.0	120.64730218	31.46369896	15.1756591796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xd9\x00(\t!\xf5\tfm)^@\x11\xa3c\x9c\xf9\xb4v?@\x19\x00\x00\x00\x00\xd0Y.@0\xba\xf6\xf9\xdb\xa1^8\nX\x02\xd8^' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433307549	10	2	0.0	120.64730216	31.46369896	15.1754150390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xde\x00(\t\xb0n\x1ffm)^@\x11\xa3c\x9c\xf9\xb4v?@\x19\x00\x00\x00\x00\xe0Y.@0\x8c\x86\xfa\xdb\xa1^8\nX\x02a\xf1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433308550	10	2	0.0	120.64730218	31.46369896	15.175537109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xe3\x00(\t?\xe84fm)^@\x11h}F\xf9\xb4v?@\x19\x00\x00\x00\x00\x88Z.@0\xe0\x95\xfa\xdb\xa1^8\nX\x020\xe3' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433309552	10	2	0.0	120.6473022	31.46369894	15.17681884765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xe8\x00(\t\xad\xcb\xbeem)^@\x118#s\xfa\xb4v?@\x19\x00\x00\x00\x00\xe0U.@0\xb2\xa5\xfa\xdb\xa1^8\nX\x02g\x8f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433310553	10	2	0.0	120.64730209	31.46369901	15.167724609375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x02\xed\x00(\tW\x95\x9eem)^@\x11t\t\xc9\xfa\xb4v?@\x19\x00\x00\x00\x00 T.@0\x86\xb5\xfa\xdb\xa1^8\nX\x02\x04\xa7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433311555	10	2	0.0	120.64730206	31.46369903	15.164306640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	0.0	0.0	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x02\xf2\x00(\t<E\xd4em)^@\x11V\x16\x9e\xfa\xb4v?@\x19\x00\x00\x00\x00\xf0V.@0\xd8\xc4\xfa\xdb\xa1^8\nX\x02\x0f\xd6' 
+Accept new connection from 0/('172.20.20.10', 59884) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-6, started 23200)>, <Thread(Thread-7, started 34636)>, <Thread(Thread-8, started 24288)>, <Thread(Thread-9, started 34980)>, <Thread(Thread-10, started 34944)>] 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x02\xf8\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n\x19\xde' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Receive message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x02\x00(\t\x95\x1eUfm)^@\x11\xdfI\xf2\xf9\xb4v?@\x19\x00\x00\x00\x00xU.@0\xd2\xf3\xfa\xdb\xa1^8\nX\x02\x93;' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433315561	10	2	0.0	120.64730223	31.46369898	15.16693115234375	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x03\x07\x00(\t\xb0n\x1ffm)^@\x11\xfd<\x1d\xfa\xb4v?@\x19\x00\x00\x00\x000S.@0\xa6\x83\xfb\xdb\xa1^8\nX\x02'\x88" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433316563	10	2	0.0	120.64730218	31.46369899	15.1624755859375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x0c\x00(\t{\xce\x8afm)^@\x11\xa3c\x9c\xf9\xb4v?@\x19\x00\x00\x00\x00\x10V.@0\xf8\x92\xfb\xdb\xa1^8\nX\x02\x87\x97' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433317564	10	2	0.0	120.64730228	31.46369896	15.1680908203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x11\x00(\t`~\xc0fm)^@\x11h}F\xf9\xb4v?@\x19\x00\x00\x00\x00pW.@0\xcc\xa2\xfb\xdb\xa1^8\nX\x02AT' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433318566	10	2	0.0	120.64730233	31.46369894	15.1707763671875	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x03\x16\x00(\t';\xcbfm)^@\x11,\x97\xf0\xf8\xb4v?@\x19\x00\x00\x00\x00\xc8W.@0\x9e\xb2\xfb\xdb\xa1^8\nX\x02\xefx" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433319567	10	2	0.0	120.64730234	31.46369892	15.17144775390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x1b\x00(\t\x0c\xeb\x00gm)^@\x11,\x97\xf0\xf8\xb4v?@\x19\x00\x00\x00\x00\xf8W.@0\xf2\xc1\xfb\xdb\xa1^8\nX\x02\xa7b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433320569	10	2	0.0	120.64730239	31.46369892	15.17181396484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03 \x00(\t*\xde+gm)^@\x11,\x97\xf0\xf8\xb4v?@\x19\x00\x00\x00\x00\xa8X.@0\xc4\xd1\xfb\xdb\xa1^8\nX\x02\xc2\x1d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433321570	10	2	0.0	120.64730243	31.46369892	15.17315673828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03%\x00(\t\x81\x14Lgm)^@\x11\x0f\xa4\xc5\xf8\xb4v?@\x19\x00\x00\x00\x00\xb8Y.@0\x98\xe1\xfb\xdb\xa1^8\nX\x02\xb8S' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433322572	10	2	0.0	120.64730246	31.46369891	15.17523193359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03*\x00(\t\xd7Jlgm)^@\x11\xf1\xb0\x9a\xf8\xb4v?@\x19\x00\x00\x00\x00\x88[.@0\xea\xf0\xfb\xdb\xa1^8\nX\x02\xcd\xa2' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433323573	10	2	0.0	120.64730249	31.4636989	15.17877197265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03/\x00(\tH\xd1Vgm)^@\x11\x0f\xa4\xc5\xf8\xb4v?@\x19\x00\x00\x00\x00\x88X.@0\xbe\x80\xfc\xdb\xa1^8\nX\x02\x1e\x02' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433324575	10	2	0.0	120.64730247	31.46369891	15.17291259765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x034\x00(\t\x0f\x8eagm)^@\x11\xf1\xb0\x9a\xf8\xb4v?@\x19\x00\x00\x00\x00hV.@0\x90\x90\xfc\xdb\xa1^8\nX\x02\xbf\x83' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433325576	10	2	0.0	120.64730248	31.4636989	15.16876220703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x039\x00(\t\xbf\x9d\x02hm)^@\x11\x98\xd7\x19\xf8\xb4v?@\x19\x00\x00\x00\x00 Z.@0\xe4\x9f\xfc\xdb\xa1^8\nX\x02\xa9\x15' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433326578	10	2	0.0	120.64730263	31.46369887	15.176025390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03>\x00(\t\x87Z\rhm)^@\x11\x98\xd7\x19\xf8\xb4v?@\x19\x00\x00\x00\x00\x88X.@0\xb8\xaf\xfc\xdb\xa1^8\nX\x02\x9bE' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433327580	10	2	0.0	120.64730264	31.46369887	15.17291259765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03C\x00(\t\xfb\x83Xhm)^@\x11>\xfe\x98\xf7\xb4v?@\x19\x00\x00\x00\x00\xe8W.@0\x8c\xbf\xfc\xdb\xa1^8\nX\x02\xd9B' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433328582	10	2	0.0	120.64730271	31.46369884	15.17169189453125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03H\x00(\t\x8a\xfdmhm)^@\x11 \x0bn\xf7\xb4v?@\x19\x00\x00\x00\x00HV.@0\xde\xce\xfc\xdb\xa1^8\nX\x02I\x19' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433329583	10	2	0.0	120.64730273	31.46369883	15.16851806640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03M\x00(\to\xad\xa3hm)^@\x11\x03\x18C\xf7\xb4v?@\x19\x00\x00\x00\x00\x88V.@0\xb2\xde\xfc\xdb\xa1^8\nX\x02S\x9d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433330585	10	2	0.0	120.64730278	31.46369882	15.16900634765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03R\x00(\t6j\xaehm)^@\x11\x03\x18C\xf7\xb4v?@\x19\x00\x00\x00\x00\x18U.@0\x84\xee\xfc\xdb\xa1^8\nX\x02\x00\x06' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433331586	10	2	0.0	120.64730279	31.46369882	15.16619873046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03W\x00(\t6j\xaehm)^@\x11\xc71\xed\xf6\xb4v?@\x19\x00\x00\x00\x00\x98T.@0\xd8\xfd\xfc\xdb\xa1^8\nX\x02h\xbd' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433332588	10	2	0.0	120.64730279	31.4636988	15.16522216796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\\\x00(\t\xfe&\xb9hm)^@\x11\xa9>\xc2\xf6\xb4v?@\x19\x00' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	120.6473028	31.46369879	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x00\x00\x00hQ.@0\xaa\x8d\xfd\xdb\xa1^8\nX\x02/\xe0' 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03a\x00(\t\xe3\xd6\xeehm)^@\x11\x8cK\x97\xf6\xb4v?@\x19\x00\x00\x00\x00\xd8Q.@0\xfe\x9c\xfd\xdb\xa1^8\nX\x02\xa5!' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433334591	10	2	0.0	120.64730285	31.46369878	15.15985107421875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03f\x00(\t\xe3\xd6\xeehm)^@\x11\x8cK\x97\xf6\xb4v?@\x19\x00\x00\x00\x00\xf0P.@0\xd2\xac\xfd\xdb\xa1^8\nX\x02\xdd\x8c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433335593	10	2	0.0	120.64730285	31.46369878	15.1580810546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03k\x00(\t\xc8\x86$im)^@\x11nXl\xf6\xb4v?@\x19\x00\x00\x00\x00\xb0Q.@0\xa4\xbc\xfd\xdb\xa1^8\nX\x02\x03\xa4' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433336594	10	2	0.0	120.6473029	31.46369877	15.1595458984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03p\x00(\t\x8fC/im)^@\x112r\x16\xf6\xb4v?@\x19\x00\x00\x00\x00hR.@0\xf8\xcb\xfd\xdb\xa1^8\nX\x02V\xe8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433337596	10	2	0.0	120.64730291	31.46369875	15.16094970703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03u\x00(\tu\xf3dim)^@\x11\xf7\x8b\xc0\xf5\xb4v?@\x19\x00\x00\x00\x00\x88S.@0\xca\xdb\xfd\xdb\xa1^8\nX\x02T^' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433338597	10	2	0.0	120.64730296	31.46369873	15.16314697265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03z\x00(\t\x01\xca\x19im)^@\x11nXl\xf6\xb4v?@\x19\x00\x00\x00\x00`Q.@0\x9e\xeb\xfd\xdb\xa1^8\nX\x02\xa8\n' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433339599	10	2	0.0	120.64730289	31.46369877	15.158935546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x7f\x00(\t\xad6Zim)^@\x112r\x16\xf6\xb4v?@\x19\x00\x00\x00\x00 S.@0\xf0\xfa\xfd\xdb\xa1^8\nX\x02\x10\xbb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433340600	10	2	0.0	120.64730295	31.46369875	15.162353515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x84\x00(\tW\x00:im)^@\x112r\x16\xf6\xb4v?@\x19\x00\x00\x00\x00\x88R.@0\xc4\x8a\xfe\xdb\xa1^8\nX\x02\xc2L' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433341602	10	2	0.0	120.64730292	31.46369875	15.16119384765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x89\x00(\t\xad6Zim)^@\x11\x15\x7f\xeb\xf5\xb4v?@\x19\x00\x00\x00\x00PR.@0\x96\x9a\xfe\xdb\xa1^8\nX\x02WP' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433342603	10	2	0.0	120.64730295	31.46369874	15.1607666015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x8f\x00(\t\x04mzim)^@\x11\xd9\x98\x95\xf5\xb4v?@\x19\x00\x00\x00\x00XQ.@0\xea\xa9\xfe\xdb\xa1^8\nX\x02\x96d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433343605	10	2	0.0	120.64730298	31.46369872	15.15887451171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x94\x00(\t<\xb0oim)^@\x11\xf7\x8b\xc0\xf5\xb4v?@\x19\x00\x00\x00\x00\xf0Q.@0\xbe\xb9\xfe\xdb\xa1^8\nX\x02\xa2o' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433344607	10	2	0.0	120.64730297	31.46369873	15.1600341796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x13\x03\x99\x00:\n\x00\n\x08\x08\x01\x10\x90\x0e\x18\xb4\x01\n\x07\x08\x02 \x92\x03($\n\x08\x08\x03 \xcb\x02(\xcc\x01\n\x06\x08\x04 M(T\n\x07\x08\x05 \xb7\x01(,\n\x02\x08\x06\n\x02\x08\x07\x80_' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x9a\x00(\t\x04mzim)^@\x11\xf7\x8b\xc0\xf5\xb4v?@\x19\x00\x00\x00\x00\xf8Q.@0\x90\xc9\xfe\xdb\xa1^8\nX\x02\x17\\' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433345608	10	2	0.0	120.64730298	31.46369873	15.16009521484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\x9f\x00(\t\xb0\xd9\xbaim)^@\x11\xbb\xa5j\xf5\xb4v?@\x19\x00\x00\x00\x00@T.@0\xe4\xd8\xfe\xdb\xa1^8\nX\x02\xe0G' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433346610	10	2	0.0	120.64730304	31.46369871	15.16455078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xa4\x00(\t\x07\x10\xdbim)^@\x11D\xd9\xbe\xf4\xb4v?@\x19\x00\x00\x00\x008T.@0\xb8\xe8\xfe\xdb\xa1^8\nX\x02\x9ab' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433347612	10	2	0.0	120.64730307	31.46369867	15.16448974609375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xa9\x00(\t\n\xb3;jm)^@\x11\xeb\xff=\xf4\xb4v?@\x19\x00\x00\x00\x00 U.@0\x8c\xf8\xfe\xdb\xa1^8\nX\x02\xb7\r' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433348614	10	2	0.0	120.64730316	31.46369864	15.166259765625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xae\x00(\t\xefbqjm)^@\x11\x92&\xbd\xf3\xb4v?@\x19\x00\x00\x00\x00\xc8X.@0\xe0\x87\xff\xdb\xa1^8\nX\x02\x91\x17' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433349616	10	2	0.0	120.64730321	31.46369861	15.17340087890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xb3\x00(\t\xb9\xc2\xdcjm)^@\x118M<\xf3\xb4v?@\x19\x00\x00\x00\x00@Z.@0\xb2\x97\xff\xdb\xa1^8\nX\x02Q\r' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433350617	10	2	0.0	120.64730331	31.46369858	15.17626953125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x03\xb8\x00(\t-\xec'km)^@\x11\xdfs\xbb\xf2\xb4v?@\x19\x00\x00\x00\x00X[.@0\x86\xa7\xff\xdb\xa1^8\nX\x02\xef#" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433351619	10	2	0.0	120.64730338	31.46369855	15.17840576171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xbd\x00(\ti\xd2}km)^@\x11\xa3\x8de\xf2' 
+...OBU Motion Data... 
+Receive message:Error parsing message 
+Accept new connection from 0/('172.20.20.10', 59888) 
+ <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-10, started 34944)>, <Thread(Thread-11, started 33972)>, <Thread(Thread-12, started 23812)>] 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x03\xc8\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n\x88\x9f' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xcd\x00(\t6\xd5Ilm)^@\x11\x0f\xce\x8e\xf1\xb4v?@\x19\x00\x00\x00\x00\xe0^.@0\xd2\xe5\xff\xdb\xa1^8\nX\x02f\xf8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433355625	10	2	0.0	120.64730365	31.46369848	15.185302734375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xd2\x00(\t\xe3A\x8alm)^@\x11\x0f\xce\x8e\xf1\xb4v?@\x19\x00\x00\x00\x00P^.@0\xa8\xf5\xff\xdb\xa1^8\nX\x02\\m' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433356628	10	2	0.0	120.64730371	31.46369848	15.1842041015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xd7\x00(\tr\xbb\x9flm)^@\x11,\xc1\xb9\xf1\xb4v?@\x19\x00\x00\x00\x000^.@0\xfa\x84\x80\xdc\xa1^8\nX\x02X\x10' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433357629	10	2	0.0	120.64730373	31.46369849	15.1839599609375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xdc\x00(\t\xe6\xe4\xealm)^@\x11\xf1\xdac\xf1\xb4v?@\x19\x00\x00\x00\x00\x00_.@0\xce\x94\x80\xdc\xa1^8\nX\x02\x9b\x9a' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433358631	10	2	0.0	120.6473038	31.46369847	15.185546875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xe1\x00(\t<\x1b\x0bmm)^@\x11\xd3\xe78\xf1\xb4v?@\x19\x00\x00\x00\x00x\\.@0\xa0\xa4\x80\xdc\xa1^8\nX\x02\xa7j' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433359632	10	2	0.0	120.64730383	31.46369846	15.18060302734375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xe6\x00(\t\x04\xd8\x15mm)^@\x11\x98\x01\xe3\xf0\xb4v?@\x19\x00\x00\x00\x00\xc8Y.@0\xf4\xb3\x80\xdc\xa1^8\nX\x02\x1cK' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433360634	10	2	0.0	120.64730384	31.46369844	15.17535400390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xeb\x00(\t<\x1b\x0bmm)^@\x11z\x0e\xb8\xf0\xb4v?@\x19\x00\x00\x00\x00\xb8X.@0\xc8\xc3\x80\xdc\xa1^8\nX\x02I\xac' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433361636	10	2	0.0	120.64730383	31.46369843	15.17327880859375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xf0\x00(\t\x92Q+mm)^@\x11z\x0e\xb8\xf0\xb4v?@\x19\x00\x00\x00\x00\x80Z.@0\x9a\xd3\x80\xdc\xa1^8\nX\x02`}' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433362637	10	2	0.0	120.64730386	31.46369843	15.1767578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xf5\x00(\t\x07{vmm)^@\x11 57\xf0\xb4v?@\x19\x00\x00\x00\x00\xb8[.@0\xee\xe2\x80\xdc\xa1^8\nX\x02\xb3\x03' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433363639	10	2	0.0	120.64730393	31.4636984	15.17913818359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xfa\x00(\t\xb3\xe7\xb6mm)^@\x11>(b\xf0\xb4v?@\x19\x00\x00\x00\x00p[.@0\xc0\xf2\x80\xdc\xa1^8\nX\x02\xe5\x8e' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433364640	10	2	0.0	120.64730399	31.46369841	15.1785888671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x03\xff\x00(\tBa\xccmm)^@\x11 57\xf0\xb4v?@\x19\x00\x00\x00\x00hZ.@0\x94\x82\x81\xdc\xa1^8\nX\x02\xf7\xfb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433365642	10	2	0.0	120.64730401	31.4636984	15.17657470703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x04\x00(\t\xef\xcd\x0cnm)^@\x11\xe5N\xe1\xef\xb4v?@\x19\x00\x00\x00\x00\x10^.@0\xe6\x91\x81\xdc\xa1^8\nX\x02u\x9c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433366643	10	2	0.0	120.64730407	31.46369838	15.1837158203125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x04\t\x00(\t'\x11\x02nm)^@\x11\x03B\x0c\xf0\xb4v?@\x19\x00\x00\x00\x000].@0\xba\xa1\x81\xdc\xa1^8\nX\x02\xc3!" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433367645	10	2	0.0	120.64730406	31.46369839	15.1820068359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x0e\x00(\tE\x04-nm)^@\x11\x03B\x0c\xf0\xb4v?@\x19\x00\x00\x00\x00\x18].@0\x8c\xb1\x81\xdc\xa1^8\nX\x02\x98\x0f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433368646	10	2	0.0	120.6473041	31.46369839	15.18182373046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x13\x00(\t\xb6\x8a\x17nm)^@\x11 57\xf0\xb4v?@\x19\x00\x00\x00\x00\x80[.@0\xe0\xc0\x81\xdc\xa1^8\nX\x02UY' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433369648	10	2	0.0	120.64730408	31.4636984	15.1787109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x18\x00(\t\n\x1e\xd7mm)^@\x11>(b\xf0\xb4v?@\x19\x00\x00\x00\x00\xc0W.@0\xb2\xd0\x81\xdc\xa1^8\nX\x02\x90f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433370649	10	2	0.0	120.64730402	31.46369841	15.17138671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x1d\x00(\t`T\xf7mm)^@\x11>(b\xf0\xb4v?@\x19\x00\x00\x00\x00 Y.@0\x86\xe0\x81\xdc\xa1^8\nX\x02p\xb7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433371651	10	2	0.0	120.64730405	31.46369841	15.174072265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04"\x00(\t\x0c\xc17nm)^@\x11\xe5N\xe1\xef\xb4v?@\x19\x00\x00\x00\x00hZ.@0\xd8\xef\x81\xdc\xa1^8\nX\x02p\x0b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433372652	10	2	0.0	120.64730411	31.46369838	15.17657470703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x04'\x00(\t\x0c\xc17nm)^@\x11\x03B\x0c\xf0\xb4v?@\x19\x00" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	120.64730411	31.46369839	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x00\x00\x000Y.@0\xac\xff\x81\xdc\xa1^8\nX\x02\xd0\x04' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04,\x00(\t\x9b:Mnm)^@\x11\xc7[\xb6\xef\xb4v?@\x19\x00\x00\x00\x00\xf8W.@0\xfe\x8e\x82\xdc\xa1^8\nX\x02\xd3\x0f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433374655	10	2	0.0	120.64730413	31.46369837	15.17181396484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x041\x00(\tf\x9a\xb8nm)^@\x11\x8cu`\xef\xb4v?@\x19\x00\x00\x00\x00\xf8Y.@0\xd2\x9e\x82\xdc\xa1^8\nX\x02\xdb\xd7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433375657	10	2	0.0	120.64730423	31.46369835	15.17572021484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x046\x00(\t\x12\x07\xf9nm)^@\x11P\x8f\n\xef\xb4v?@\x19\x00\x00\x00\x00\x80Y.@0\xa4\xae\x82\xdc\xa1^8\nX\x02kd' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433376658	10	2	0.0	120.64730429	31.46369833	15.1748046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04;\x00(\t0\xfa#om)^@\x112\x9c\xdf\xee\xb4v?@\x19\x00\x00\x00\x00\xe8Z.@0\xf8\xbd\x82\xdc\xa1^8\nX\x02%\x7f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433377660	10	2	0.0	120.64730433	31.46369832	15.17755126953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04@\x00(\t0\xfa#om)^@\x112\x9c\xdf\xee\xb4v?@\x19\x00\x00\x00\x00(Z.@0\xca\xcd\x82\xdc\xa1^8\nX\x02\xdcQ' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433378661	10	2	0.0	120.64730433	31.46369832	15.17608642578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04E\x00(\t\xa7\xc6\xcfom)^@\x11\x80\xe9\xdd\xed\xb4v?@\x19\x00\x00\x00\x00\xf0^.@0\x9e\xdd\x82\xdc\xa1^8\nX\x02\xf70' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433379663	10	2	0.0	120.64730449	31.46369826	15.1854248046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04J\x00(\t\x18M\xbaom)^@\x11\x9d\xdc\x08\xee\xb4v?@\x19\x00\x00\x00\x00(^.@0\xf0\xec\x82\xdc\xa1^8\nX\x02\xbb\x8b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433380664	10	2	0.0	120.64730447	31.46369827	15.18389892578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04O\x00(\t\xc2\x16\x9aom)^@\x11\xbb\xcf3\xee\xb4v?@\x19\x00\x00\x00\x00(\\.@0\xc4\xfc\x82\xdc\xa1^8\nX\x02\x04\xb8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433381666	10	2	0.0	120.64730444	31.46369828	15.17999267578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04T\x00(\t\x89\xd3\xa4om)^@\x11\x9d\xdc\x08\xee\xb4v?@\x19\x00\x00\x00\x00\xf8[.@0\x96\x8c\x83\xdc\xa1^8\nX\x02y\x7f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433382667	10	2	0.0	120.64730445	31.46369827	15.17962646484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04Y\x00(\t\xfbY\x8fom)^@\x11\xbb\xcf3\xee\xb4v?@\x19\x00\x00\x00\x00H\\.@0\xea\x9b\x83\xdc\xa1^8\nX\x02\x8c\x1f' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433383669	10	2	0.0	120.64730443	31.46369828	15.18023681640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04^\x00(\tQ\x90\xafom)^@\x11\xf7\xb5\x89\xee\xb4v?@\x19\x00\x00\x00\x00\xe8\\.@0\xbc\xab\x83\xdc\xa1^8\nX\x02\xb2\x98' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433384670	10	2	0.0	120.64730446	31.4636983	15.18145751953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04c\x00(\tT3\x10pm)^@\x11\xbb\xcf3\xee\xb4v?@\x19\x00\x00\x00\x000a.@0\x90\xbb\x83\xdc\xa1^8\nX\x02u\xf1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433385672	10	2	0.0	120.64730455	31.46369828	15.1898193359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04h\x00(\t\xaai0pm)^@\x11\x9d\xdc\x08\xee\xb4v?@\x19\x00\x00\x00\x00\xc8b.@0\xe2\xca\x83\xdc\xa1^8\nX\x02hP' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433386673	10	2	0.0	120.64730458	31.46369827	15.19293212890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04m\x00(\t\x1e\x93{pm)^@\x11b\xf6\xb2\xed\xb4v?@\x19\x00\x00\x00\x00\xa0d.@0\xb6\xda\x83\xdc\xa1^8\nX\x02\x01\x1c' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433387675	10	2	0.0	120.64730465	31.46369825	15.196533203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04r\x00(\tW\xd6ppm)^@\x11b\xf6\xb2\xed\xb4v?@\x19\x00\x00\x00\x00\xd8d.@0\x88\xea\x83\xdc\xa1^8\nX\x02\xafI' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433388676	10	2	0.0	120.64730464	31.46369825	15.19696044921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04w\x00(\tu\xc9\x9bpm)^@\x11D\x03\x88\xed\xb4v?@\x19\x00\x00\x00\x00(e.@0\xdc\xf9\x83\xdc\xa1^8\nX\x02\xe7U' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433389678	10	2	0.0	120.64730468	31.46369824	15.19757080078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04|\x00(\t\x07\xe6\x11qm)^@\x11\xcd6\xdc\xec\xb4v?@\x19\x00\x00\x00\x00Xg.@0\xae\x89\x84\xdc\xa1^8\nX\x02\x0c]' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433390679	10	2	0.0	120.64730479	31.4636982	15.20184326171875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x81\x00(\tB\xccgqm)^@\x11\xafC\xb1\xec\xb4v?@\x19\x00\x00\x00\x00hi.@0\x82\x99\x84\xdc\xa1^8\nX\x02\x9e\xf6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433391681	10	2	0.0	120.64730487	31.46369819	15.20587158203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x86\x00(\t\x0c,\xd3qm)^@\x11t][\xec\xb4v?@\x19\x00\x00\x00\x00\xd8m.@0\xd4\xa8\x84\xdc\xa1^8\nX\x02\x86t' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433392682	10	2	0.0	120.64730497	31.46369817	15.21453857421875	0.0	0	0	0.0	 
+Accept new connection from 0/('172.20.20.10', 59889) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-10, started 34944)>, <Thread(Thread-11, started 33972)>, <Thread(Thread-12, started 23812)>, <Thread(Thread-13, started 25908)>, <Thread(Thread-14, started 29700)>] 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x04\x8c\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n\xf3m' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Receive message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x96\x00(\t\x12r\x94rm)^@\x11\xfd\x90\xaf\xeb\xb4v?@\x19\x00\x00\x00\x00@t.@0\xce\xd7\x84\xdc\xa1^8\nX\x02=w' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433395687	10	2	0.0	120.64730515	31.46369813	15.22705078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\x9b\x00(\t\xda.\x9frm)^@\x11\xdf\x9d\x84\xeb\xb4v?@\x19\x00\x00\x00\x00\xe8t.@0\xa0\xe7\x84\xdc\xa1^8\nX\x02\x0b\xe7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433396688	10	2	0.0	120.64730516	31.46369812	15.22833251953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xa0\x00(\t\xc2\x815sm)^@\x11J\xde\xad\xea\xb4v?@\x19\x00\x00\x00\x00\xf0y.@0\xf4\xf6\x84\xdc\xa1^8\nX\x02\xf1h' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433397690	10	2	0.0	120.6473053	31.46369807	15.2381591796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xa5\x00(\tlK\x15sm)^@\x11J\xde\xad\xea\xb4v?@\x19\x00\x00\x00\x00@z.@0\xc8\x86\x85\xdc\xa1^8\nX\x02\xacd' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433398692	10	2	0.0	120.64730527	31.46369807	15.23876953125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x04\xaa\x00(\t\xe0t`sm)^@\x11,\xeb\x82\xea\xb4v?@\x19\x00\x00\x00\x008}.@0\x9a\x96\x85\xdc\xa1^8\nX\x02F'" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433399693	10	2	0.0	120.64730534	31.46369806	15.24456787109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xaf\x00(\t\xc8\xc7\xf6sm)^@\x11\x98+\xac\xe9\xb4v?@\x19\x00\x00\x00\x00\x88\x83.@0\xec\xa5\x85\xdc\xa1^8\nX\x02\xffa' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433400694	10	2	0.0	120.64730548	31.46369801	15.25689697265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xb4\x00(\tu47tm)^@\x11\\EV\xe9\xb4v?@\x19\x00\x00\x00\x00\x10\x85.@0\xc0\xb5\x85\xdc\xa1^8\nX\x02\xd3]' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433401696	10	2	0.0	120.64730554	31.46369799	15.2598876953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xb9\x00(\t\xce\r\xb8tm)^@\x11\x03l\xd5\xe8\xb4v?@\x19\x00\x00\x00\x00\xd8\x88.@0\x94\xc5\x85\xdc\xa1^8\nX\x02\x0c\xb6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433402698	10	2	0.0	120.64730566	31.46369796	15.26727294921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xbf\x00(\t]\x87\xcdtm)^@\x11\x03l\xd5\xe8\xb4v?@\x19\x00\x00\x00\x00H\x89.@0\xe6\xd4\x85\xdc\xa1^8\nX\x02\xd8w' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433403699	10	2	0.0	120.64730568	31.46369796	15.26812744140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xc4\x00(\t]\x87\xcdtm)^@\x11 _\x00\xe9\xb4v?@\x19\x00\x00\x00\x00P\x88.@0\xba\xe4\x85\xdc\xa1^8\nX\x02A\xa9' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433404701	10	2	0.0	120.64730568	31.46369797	15.2662353515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xc9\x00(\t{z\xf8tm)^@\x11\x03l\xd5\xe8\xb4v?@\x19\x00\x00\x00\x00H\x89.@0\x90\xf4\x85\xdc\xa1^8\nX\x02\xc6\xc8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433405704	10	2	0.0	120.64730572	31.46369796	15.26812744140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x13\x04\xce\x00:\n\x00\n\x08\x08\x01\x10\xf7\x12\x18\xf0\x01\n\x07\x08\x02 \x8f\x04(0\n\x08\x08\x03 \xb9\x03(\x90\x02\n\x06\x08\x04 \\(d\n\x07\x08\x05 \xf4\x01(:\n\x02\x08\x06\n\x02\x08\x07\x90)' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xcf\x00(\t\t\xf4\rum)^@\x11\x03l\xd5\xe8\xb4v?@\x19\x00\x00\x00\x00\xd0\x87.@0\xe4\x83\x86\xdc\xa1^8\nX\x02e\x99' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433406706	10	2	0.0	120.64730574	31.46369796	15.2652587890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xd4\x00(\tE\xdacum)^@\x11\xe5x\xaa\xe8\xb4v?@\x19\x00\x00\x00\x00\xe8\x87.@0\xb8\x93\x86\xdc\xa1^8\nX\x02\xff\xaf' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433407708	10	2	0.0	120.64730582	31.46369795	15.26544189453125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xd9\x00(\t\xd7\xf6\xd9um)^@\x11\xa9\x92T\xe8\xb4v?@\x19\x00\x00\x00\x00\x18\x8b.@0\x8a\xa3\x86\xdc\xa1^8\nX\x02\xcc\x8d' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433408709	10	2	0.0	120.64730593	31.46369793	15.27166748046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xde\x00(\t\xf2F\xa4um)^@\x11 _\x00\xe9\xb4v?@\x19\x00\x00\x00\x00\x08\x86.@0\xde\xb2\x86\xdc\xa1^8\nX\x02\xb8\xe7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433409711	10	2	0.0	120.64730588	31.46369797	15.26177978515625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xe3\x00(\t\xbc\xa6\x0fvm)^@\x11\xc7\x85\x7f\xe8\xb4v?@\x19\x00\x00\x00\x00\x98\x87.@0\xb4\xc2\x86\xdc\xa1^8\nX\x02\xc9\xa6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433410714	10	2	0.0	120.64730598	31.46369794	15.26483154296875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xe8\x00(\t\xa1VEvm)^@\x11\xc7\x85\x7f\xe8\xb4v?@\x19\x00\x00\x00\x00\xa8\x88.@0\x86\xd2\x86\xdc\xa1^8\nX\x02g\xfb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433411715	10	2	0.0	120.64730603	31.46369794	15.26690673828125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x04\xed\x00(\t\x0f:\xcfum)^@\x11\\EV\xe9' 
+...OBU Motion Data... 
+Receive message:Error parsing message 
+Send message:[WinError 10053] 你的主机中的软件中止了一个已建立的连接。 
+Accept new connection from 0/('172.20.20.10', 59891) 
+Thread number:[<_MainThread(MainThread, stopped 1456)>, <ElevStatusWsServer(ElevStatusServer, started 21060)>, <Thread(Thread-14, started 29700)>, <Thread(Thread-15, started 34608)>, <Thread(Thread-16, started 34260)>] 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x11\x05\\\x00<\n\x03OBU\x12\x06voyage\x1a\x072.0.0.0"\x08R1923019*\x0f123456789012345Z\x05RandD`\n\xfc\xad' 
+...OBU&RSU Register,please response... 
+OBU&RSU Register Data:OBU	2.0.0.0 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05a\x00(\t\x0c\x02\nym)^@\x11\xa3\xb7.\xeb\xb4v?@\x19\x00\x00\x00\x00(\x97.@0\xda\xc9\x89\xdc\xa1^8\nX\x02\xe5/' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433435757	10	2	0.0	120.64730669	31.4636981	15.29522705078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05f\x00(\t-\x98\x95ym)^@\x11h\xd1\xd8\xea\xb4v?@\x19\x00\x00\x00\x00\x90\x9b.@0\xac\xd9\x89\xdc\xa1^8\nX\x02\xe7\xbc' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433436758	10	2	0.0	120.64730682	31.46369808	15.3038330078125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05k\x00(\t0;\xf6ym)^@\x11J\xde\xad\xea\xb4v?@\x19\x00\x00\x00\x00\x18\x9b.@0\x80\xe9\x89\xdc\xa1^8\nX\x02\xf0\xb8' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433437760	10	2	0.0	120.64730691	31.46369807	15.30291748046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05p\x00(\t\x87q\x16zm)^@\x11h\xd1\xd8\xea\xb4v?@\x19\x00\x00\x00\x00\x80\x9a.@0\xd4\xf8\x89\xdc\xa1^8\nX\x02sd' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433438762	10	2	0.0	120.64730694	31.46369808	15.3017578125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05u\x00(\tQ\xd1\x81zm)^@\x11h\xd1\xd8\xea\xb4v?@\x19\x00\x00\x00\x00@\x9d.@0\xa6\x88\x8a\xdc\xa1^8\nX\x02\x7f\xb9' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433439763	10	2	0.0	120.64730704	31.46369808	15.30712890625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05z\x00(\t6\x81\xb7zm)^@\x11h\xd1\xd8\xea\xb4v?@\x19\x00\x00\x00\x00\x18\x9d.@0\xfa\x97\x8a\xdc\xa1^8\nX\x02O\x84' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433440765	10	2	0.0	120.64730709	31.46369808	15.30682373046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x7f\x00(\t\x04\x84\x83{m)^@\x11\xd3\x11\x02\xea\xb4v?@\x19\x00\x00\x00\x00\xf8\xa2.@0\xcc\xa7\x8a\xdc\xa1^8\nX\x02\x0e\xe6' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433441766	10	2	0.0	120.64730728	31.46369803	15.31829833984375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x84\x00(\t\xec\xd6\x19|m)^@\x11\xb5\x1e\xd7\xe9\xb4v?@\x19\x00\x00\x00\x00\xf0\xa5.@0\xa0\xb7\x8a\xdc\xa1^8\nX\x02\xb5\xd1' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433442768	10	2	0.0	120.64730742	31.46369802	15.3240966796875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x89\x00(\t]]\x04|m)^@\x11\xf1\x04-\xea\xb4v?@\x19\x00\x00\x00\x00P\xa3.@0\xf4\xc6\x8a\xdc\xa1^8\nX\x02/W' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433443770	10	2	0.0	120.6473074	31.46369804	15.3189697265625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x8e\x00(\t{P/|m)^@\x11\xf1\x04-\xea\xb4v?@\x19\x00\x00\x00\x00 \xa4.@0\xce\xd6\x8a\xdc\xa1^8\nX\x02\x03V' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433444775	10	2	0.0	120.64730744	31.46369804	15.320556640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x93\x00(\t\xd1\x86O|m)^@\x11,\xeb\x82\xea\xb4v?@\x19\x00\x00\x00\x00\x10\xa6.@0\xa8\xe6\x8a\xdc\xa1^8\nX\x02\xa1\xca' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433445780	10	2	0.0	120.64730747	31.46369806	15.3243408203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\x98\x00(\t$\x1a\x0f|m)^@\x11,\xeb\x82\xea\xb4v?@\x19\x00\x00\x00\x00\xe8\xa1.@0\xfc\xf5\x8a\xdc\xa1^8\nX\x02\xdaZ' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433446782	10	2	0.0	120.64730741	31.46369806	15.31622314453125	0.0	0	0	0.0	 
+Original byte frame:b"\xda\xdb\xdc\xdd\x021\x05\x9d\x00(\t\x06'\xe4{m)^@\x11h\xd1\xd8\xea\xb4v?@\x19\x00\x00\x00\x00H\xa0.@0\xce\x85\x8b\xdc\xa1^8\nX\x02+\x94" 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433447783	10	2	0.0	120.64730737	31.46369808	15.31304931640625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xa2\x00(\t\xefyz|m)^@\x11\xf1\x04-\xea\xb4v?@\x19\x00\x00\x00\x00\x00\xa6.@0\xa2\x95\x8b\xdc\xa1^8\nX\x02\xd6.' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433448785	10	2	0.0	120.64730751	31.46369804	15.32421875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xa7\x00(\t*`\xd0|m)^@\x11\xd3\x11\x02\xea\xb4v?@\x19\x00\x00\x00\x00 \xa7.@0\xf4\xa4\x8b\xdc\xa1^8\nX\x02\xf4(' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433449786	10	2	0.0	120.64730759	31.46369803	15.326416015625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xac\x00(\t\x9e\x89\x1b}m)^@\x11\xb5\x1e\xd7\xe9\xb4v?@\x19\x00\x00\x00\x00\x80\xa7.@0\xc8\xb4\x8b\xdc\xa1^8\nX\x02\xe8)' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433450788	10	2	0.0	120.64730766	31.46369802	15.3271484375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xb1\x00(\t\xdaoq}m)^@\x11z8\x81\xe9\xb4v?@\x19\x00\x00\x00\x00\xa8\xab.@0\x9a\xc4\x8b\xdc\xa1^8\nX\x02\xff7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433451789	10	2	0.0	120.64730774	31.463698	15.33526611328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xb6\x00(\t\x15V\xc7}m)^@\x11\\EV\xe9\xb4v?@\x19\x00\x00\x00\x00\xc8\xad.@0\xee\xd3\x8b\xdc\xa1^8\nX\x02\x80\xcb' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433452791	10	2	0.0	120.64730782	31.46369799	15.33941650390625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xbb\x00(\t\xfb\x05\xfd}m)^@\x11>R+\xe9\xb4v?@\x19\x00' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	0	0	0	0.0	120.64730787	31.46369798	0.0	0.0	0	0	0.0	 
+Original byte frame:b'\x00\x00\x00\xd8\xaf.@0\xc2\xe3\x8b\xdc\xa1^8\nX\x02\x7f<' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xc0\x00(\t3I\xf2}m)^@\x11>R+\xe9\xb4v?@\x19\x00\x00\x00\x00p\xaf.@0\x94\xf3\x8b\xdc\xa1^8\nX\x02\xa0O' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433454794	10	2	0.0	120.64730786	31.46369798	15.3426513671875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xc5\x00(\t3I\xf2}m)^@\x11\x98+\xac\xe9\xb4v?@\x19\x00\x00\x00\x00\xa8\xad.@0\xe8\x82\x8c\xdc\xa1^8\nX\x02\xc9\xf7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433455796	10	2	0.0	120.64730786	31.46369801	15.33917236328125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xca\x00(\tQ<\x1d~m)^@\x11z8\x81\xe9\xb4v?@\x19\x00\x00\x00\x00\xb8\xae.@0\xba\x92\x8c\xdc\xa1^8\nX\x02K\xc3' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433456797	10	2	0.0	120.6473079	31.463698	15.34124755859375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xcf\x00(\t\xa7r=~m)^@\x11>R+\xe9\xb4v?@\x19\x00\x00\x00\x00 \xb0.@0\x8c\xa2\x8c\xdc\xa1^8\nX\x02\x1as' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433457798	10	2	0.0	120.64730793	31.46369798	15.343994140625	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xd4\x00(\t\xe0\xb52~m)^@\x11\\EV\xe9\xb4v?@\x19\x00\x00\x00\x00\x18\xaf.@0\xe0\xb1\x8c\xdc\xa1^8\nX\x02\x0c\x15' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433458800	10	2	0.0	120.64730792	31.46369799	15.34197998046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xd9\x00(\t\xaa\x15\x9e~m)^@\x11z8\x81\xe9\xb4v?@\x19\x00\x00\x00\x00\x98\xb1.@0\xb4\xc1\x8c\xdc\xa1^8\nX\x02;\x1b' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433459802	10	2	0.0	120.64730802	31.463698	15.34686279296875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xde\x00(\t\x1e?\xe9~m)^@\x11\\EV\xe9\xb4v?@\x19\x00\x00\x00\x000\xb1.@0\x86\xd1\x8c\xdc\xa1^8\nX\x02\xbd\x9e' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433460803	10	2	0.0	120.64730809	31.46369799	15.3460693359375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xe3\x00(\tuu\t\x7fm)^@\x11\x98+\xac\xe9\xb4v?@\x19\x00\x00\x00\x00\x10\xb1.@0\xda\xe0\x8c\xdc\xa1^8\nX\x02E\x15' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433461805	10	2	0.0	120.64730812	31.46369801	15.3458251953125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xe8\x00(\t\xb0[_\x7fm)^@\x11\\EV\xe9\xb4v?@\x19\x00\x00\x00\x00\x98\xb1.@0\xac\xf0\x8c\xdc\xa1^8\nX\x02\x08\xc0' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433462806	10	2	0.0	120.6473082	31.46369799	15.34686279296875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x17\x00\x02\x00\x02\x9f\xef' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xee\x00(\t]\xc8\x9f\x7fm)^@\x11>R+\xe9\xb4v?@\x19\x00\x00\x00\x00\x10\xb2.@0\x80\x80\x8d\xdc\xa1^8\nX\x02\x87\xd9' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433463808	10	2	0.0	120.64730826	31.46369798	15.3477783203125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xf3\x00(\tBx\xd5\x7fm)^@\x11 _\x00\xe9\xb4v?@\x19\x00\x00\x00\x008\xb3.@0\xd2\x8f\x8d\xdc\xa1^8\nX\x023s' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433464809	10	2	0.0	120.64730831	31.46369797	15.35003662109375	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xf8\x00(\t`k\x00\x80m)^@\x11\x03l\xd5\xe8\xb4v?@\x19\x00\x00\x00\x00`\xb4.@0\xa4\x9f\x8d\xdc\xa1^8\nX\x02;+' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433465810	10	2	0.0	120.64730835	31.46369796	15.352294921875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x05\xfd\x00(\t\x0c\xd8@\x80m)^@\x11\xe5x\xaa\xe8\xb4v?@\x19\x00\x00\x00\x00\x18\xb5.@0\xf6\xae\x8d\xdc\xa1^8\nX\x02}\xaa' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433466811	10	2	0.0	120.64730841	31.46369795	15.35369873046875	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x02\x13\x06\x02\x00;\n\x00\n\x08\x08\x01\x10\xd3\x17\x18\xac\x02\n\x07\x08\x02 \x8a\x05(:\n\x08\x08\x03 \xb1\x04(\xde\x02\n\x07\x08\x04 {(\x86\x01\n\x07\x08\x05 \xb0\x02(H\n\x02\x08\x06\n\x02\x08\x07$i' 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x06\x03\x00(\t\xb9D\x81\x80m)^@\x11\xc7\x85\x7f\xe8\xb4v?@\x19\x00\x00\x00\x00h\xb8.@0\xca\xbe\x8d\xdc\xa1^8\nX\x02\xf0{' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433467813	10	2	0.0	120.64730847	31.46369794	15.36016845703125	0.0	0	0	0.0	 
+Original byte frame:b'\xda\xdb\xdc\xdd\x021\x06\x08\x00(\tf\xb1\xc1\x80m)^@\x11\x8c\x9f)\xe8\xb4v?@\x19\x00\x00\x00\x00\x80\xba.@0\x9c\xce\x8d\xdc\xa1^8\nX\x02^\xc7' 
+...OBU Motion Data... 
+OBU Data Parsed Success! 
+DATA_FLAG	1619433468814	10	2	0.0	120.64730853	31.46369792	15.3642578125	0.0	0	0	0.0	 
+------------------------------------ 
+OBUServer host:172.20.20.10/port:10001 started listen... 
+------------------------------------ 
+OBUServer host:172.20.20.10/port:10001 started listen... 

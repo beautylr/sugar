@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+{% block content%}
+<div class="m-right">
+		<div class="right-nav">
+				<ul>
+						<li><img src="static/img/home.png"></li>
+						<li style="margin-left:25px;">您当前的位置：</li>
+						<li><a href="#">测试场景</a></li>
+				</ul>
+		</div>
+		<div class="main" >
+            <table id="table-evaluation" class="table-bordered" style="text-align:center;margin-left:22px;margin-right:40px;width:100%;height:100%;border:1px solid #804040">
+                <tr style="height:20px">
+                    <th>测试项目</th>
+                    <th >测试场景</th>
+                    <th >仿真场景</th>
+                </tr>
+                <tr style="background-color:#fff">
+                    <td style="font-weight:bold">机动车信号灯识别及响应</td>
+                    <td >
+                        <h>测试道路为至少包含一条车道的长直道并在路段内设置机动车信号灯，信号灯类型可根据实际测试路段情况选择。</h>
+                        <br><br>
+                        <img src="static/img/b1.png" alt="" style="width:480px;height:180px"/>
+
+
+                    </td>
+                    <td>
+                        <img src="static/img/机动车信号灯识别及响应.gif" alt="" style="width:500px;height:280px" />
+                    </td>
+                </tr>
+
+            </table>
+
+
+		</div>
+</div>
+
+{% endblock %}
+

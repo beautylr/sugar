@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="m-right">
+		<div class="right-nav">
+				<ul>
+						<li><img src="static/img/home.png"></li>
+						<li style="margin-left:25px;">您当前的位置：</li>
+						<li><a href="#">测试场地</a></li>
+				</ul>
+		</div>
+        <div class="main">
+             {% block page_content %}
+
+             {% endblock %}
+            <div class="main3" style="position:relative;float:right;width:10%;margin-right:30px">
+                <table id="table-evaluation" class="table-bordered" style="text-align:center;width:100%;height:100%">
+
+                    <tr style="">
+                        <td><button onclick="window.location.href = '../video_monitor'">监控相机1</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button  onclick="window.location.href = ''" >监控相机2</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机3</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机4</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机5</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机6</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机7</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机8</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机9</button></td>
+
+                    </tr>
+                    <tr style="">
+                        <td> <button onclick="window.location.href = ''">监控相机10</button></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+            </table>
+            </div>
+        </div>
+</div>
+
+{% endblock %}
+
