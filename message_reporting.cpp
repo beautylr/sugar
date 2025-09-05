@@ -76,58 +76,6 @@ Big h1(const char * join, ECn VPKm, ECn Xm, Big Tm1, Big q) {
     return h0(ichar,q);
 }
 
-/* h2:{0,1}* \plus G \plus G \plus Z_q* \plus G \plus{0,1}* --> Z_q* */
-Big h2(const char * mi, ECn Ai, ECn VPKi, Big sigma, ECn L, Big Ti, Big q) {
-    Big aix,aiy,vpkix,vpkiy,lx,ly;
-    Ai.getxy(aix,aiy);
-    VPKi.getxy(vpkix,vpkiy);
-    L.getxy(lx,ly);
-    char *aix_char=new char[POINTXY_BYTESIZE],*aiy_char=new char[POINTXY_BYTESIZE],
-            *vpkix_char=new char[POINTXY_BYTESIZE],*vpkiy_char=new char[POINTXY_BYTESIZE],
-            *lx_char=new char[POINTXY_BYTESIZE],*ly_char=new char[POINTXY_BYTESIZE],
-            *sigma_char=new char[POINTXY_BYTESIZE],*ti_char=new char[POINTXY_BYTESIZE];
-    aix_char<<aix;
-    aiy_char<<aiy;
-    vpkix_char<<vpkix;
-    vpkiy_char<<vpkiy;
-    lx_char<<lx;
-    ly_char<<ly;
-    sigma_char<<sigma;
-    ti_char<<Ti;
-    const string &istring=string(aix_char)+string(aiy_char)+string(vpkix_char)+string(vpkiy_char)+
-            string(lx_char)+string(ly_char)+string(ti_char)+string(sigma_char)+string(mi);
-    const char *ichar=istring.c_str();
-    delete[] aix_char;
-    delete[] aiy_char;
-    delete[] vpkix_char;
-    delete[] vpkiy_char;
-    delete[] lx_char;
-    delete[] ly_char;
-    delete[] sigma_char;
-    delete[] ti_char;
-    return h0(ichar,q);
-}
-
-/* h1:{0,1}* \plus G \plus{0,1}* --> Z_q* */
-Big h_signf(char * encm, ECn pkfj, Big Tm2, Big q) {
-    Big pkfjx,pkfjy;
-    pkfj.getxy(pkfjx,pkfjy);
-    char *pkfjx_char=new char[POINTXY_BYTESIZE],*pkfjy_char=new char[POINTXY_BYTESIZE],
-            *tm2_char=new char[POINTXY_BYTESIZE];
-    pkfjx_char<<pkfjx;
-    pkfjy_char<<pkfjy;
-    tm2_char<<Tm2;
-    const string &istring=string(encm)+string(pkfjx_char)+string(pkfjy_char)+string(tm2_char);
-    const char *ichar=istring.c_str();
-    return h0(ichar,q);
-}
-
-/*get message hash */
-Big getmsghash(const char* message, Big q) {
-    Big h = h0(message,q);
-    return h;
-}
-
 /*Since weight generation relies on continuous iterative optimization of the algorithm and can be generated in advance based on a 
 priori data, only the very simple code to get the values is given here for convenience so that it can be calculated later on */
 void weight_select(int count, int bit_lengths[]){
@@ -153,43 +101,11 @@ bool generate_moduli(int n, int* bit_lengths, big* moduli,Big q) {
     big gcd_val = mirvar(0);
     big tmp = mirvar(0);
 
-    for (int i = 0; i < n; ++i) {
-        int current_bit_length = bit_lengths[i];
-        do {
-            bigbits(current_bit_length, moduli[i]);  //use different bits to generate random big numbers
-            //ensure that the highest bit is 1 to preventing the random number of bits too small
-            expb2(current_bit_length - 1, tmp);  //generate 2^(current_bit_length-1)
-            if (mr_compare(moduli[i], tmp) < 0) {  //if the random number genration less than 2^(bit_length-1)
-                add(moduli[i], tmp, moduli[i]);    //add it to this scope
-            }
-            if (!isprime(moduli[i])) continue;  //ensure this number is prime
-            //check whether the generated modulus is commutative with q 
-            egcd(moduli[i], q.getbig(), gcd_val);
-            if (size(gcd_val) != 1) {  
-                continue;
-            }
-            //check whether the generated modulus is commutative with previous modulus
-            bool co_prime = true;
-            for (int j = 0; j < i; ++j) {
-                egcd(moduli[i], moduli[j], gcd_val);
-                if (size(gcd_val) != 1) {  
-                    co_prime = false;
-                    break;
-                }
-            }
-            if (co_prime) break; 
-        } while (true);
-        // cout << "Moduli " << i + 1 << ": " << moduli[i] << endl;
-    }
-    mirkill(gcd_val);
     return true;
 }
 
 Big generate_ul(Big L){
     Big UL;
-    do{
-        UL=rand(L); //randomly generate UL, 0 <= UL < L
-    }while (UL==0);
     return UL;
 }
 
@@ -198,13 +114,6 @@ void randomValue(int n, Big p0, Big* randV){
     for(int i = 0; i < n; i++) randV[i] =rand(p0);
 }
 
-/*Lift: compute S = s + p0 * UL*/ 
-Big liftSecret(Big secret, Big p0, Big UL) {
-    Big S;
-    S= p0 * UL;         
-    S= secret + p0 * UL; 
-    return S;
-}
 
 /* distributing shares of secret key sk */
 void distributesk(Big S, int num_moduli, Big shares[], Big moduli_new[]) {
@@ -214,21 +123,13 @@ void distributesk(Big S, int num_moduli, Big shares[], Big moduli_new[]) {
             cout << "Error：moduli[" << i << "] is zero, unable to distribute secret shares " << endl;
             continue;
         }
-        // modulo operation
-        shares[i] = S % moduli_new[i];  // shares[i] = S % pi
-        // divide(S, moduli[i], shares[i]);  
     }
 }
 /* distributing shares of random numbers  */
 void distributeRandomV(Big S, int rowi, int num_moduli, Big** Xij, Big moduli_new[]) {
     // cout << "rowi:" <<rowi << endl;
     for (int i = 0; i < num_moduli; i++) {
-        if (moduli_new[i] == 0) {
-            cout << "Error：moduli[" << i << "] is zero, unable to distribute secret shares" << endl;
-            continue;
-        }
-        Xij[rowi][i] = S % moduli_new[i];  // Xij[i] = S % pi
-        // cout << "Xij:" << Xij[rowi][i] << endl; 
+
     }
 }
 
@@ -238,59 +139,14 @@ void compute_PA_PABa(Big* moduli_n, int size, int maxt, int mint, Big& P_A, Big&
     Big* moduli_new = new Big[size_new];
     for (int i = 0; i < size_new; ++i) moduli_new[i] = moduli_n[i+1];
     // sorting arrays
-    for (int i = 0; i < size_new; ++i) {
-        for (int j = i + 1; j < size_new; ++j) {
-            if (mr_compare(moduli_new[i].getbig(), moduli_new[j].getbig()) < 0) {
-                Big temp = moduli_new[i];
-                moduli_new[i] = moduli_new[j];
-                moduli_new[j] = temp;
-            }
-        }
-    }
-    P_A = 1;
-    PA_Ba = 1;
-    for (int i = 0; i < maxt && i < size_new; ++i)  P_A *= moduli_new[i];
-    for (int i = size_new - 1; i >= size_new - mint && i >= 0; --i)  PA_Ba *= moduli_new[i];
+
 }
 
 void generate_random_in_range(big lower_bound, big upper_bound, big random_result) {
     big range = mirvar(0);  // storage range
     big random_offset = mirvar(0);  
-    // compute range: range = upper_bound - lower_bound
-    subtract(upper_bound, lower_bound, range);
-    // generate random number within range
-    bigrand(range, random_offset);
-    add(lower_bound, random_offset, random_result);
     mirkill(range);
     mirkill(random_offset);
-}
-
-/* reconstruct secrets from authorization set A */
-Big recoverSecret(Big shares[], int* chosen_indexes, int num_chosen, Big moduli[]) {
-    Big M=1; // M = P(modulus product)
-    Big result;  
-    Big inv=1, temp;
-    for (int i = 0; i < num_chosen; i++) {
-        M= M * moduli[chosen_indexes[i]];
-        // multiply(M, moduli[chosen_indexes[i]], M);
-    }
-    // cout << "M:" << M << endl;
-    // recovering S by using CRT
-    for (int i = 0; i < num_chosen; i++) {
-        Big Mi;
-        Mi= M / moduli[chosen_indexes[i]];
-        // divide(Mb, modulib, Mi);  // Mi = M / pi
-        if (moduli[chosen_indexes[i]] == 0) cout << "Error: moduli is zero" << endl;
-        inv = inverse(Mi , moduli[chosen_indexes[i]]); // compute inverse element:inv = Mi^(-1) mod pi
-        temp = 1;
-        temp  = inv * Mi; 
-        temp = temp * shares[chosen_indexes[i]]; 
-        result = result + temp;  
-    }
-    // result % M
-    result %= M;
-    // cout << "result_S:" << result << endl;
-    return result;
 }
 
 /* recovering secret s from S: s = S % p0 */
@@ -300,85 +156,10 @@ Big recoverOriginalSecret(Big S, Big p0) {
     return secret;
 }
 
-void add_share(int num_participants, Big** Xij, Big moduli_new[], Big* Xi){
-    for (int j = 0; j < num_participants; ++j) {
-        for (int i = 0; i < num_participants; ++i) {
-            Xi[j] += Xij[i][j]; // cumulative share values
-        }
-        Xi[j] %= moduli_new[j];
-        // cout << "Participant " << j << " secret share [X]_" << j << " = " << Xi[j] << endl;
-    }
-}
-
-void Frandom(int num_participants, Big p0, Big UL, Big** Xij, Big moduli_new[], Big* randV){
-    for(int i = 0; i < num_participants; i++){
-        Big S = liftSecret(randV[i], p0, UL);  // compute S = s + p0 * UL
-        // cout << "S:"  << S << endl;
-        distributeRandomV(S, i, num_participants, Xij, moduli_new);
-    }
-}
-
-void Fdeg(int num_participants, Big p0, Big moduli_new[], Big* ki0, Big* ki1, int threshold, int namda, Big UL1){
-    //sampling in different range of random value k 
-    Big L1=1;
-    Big L2=1;
-    L1 <<= (threshold+namda);
-    L2 <<= (2*threshold+5*namda);
-    UL1 = generate_ul(L1);
-    Big UL2 = generate_ul(L2);
-    Big** kij0 = new Big*[num_participants];
-    Big** kij1 = new Big*[num_participants];
-    for (int i = 0; i < num_participants; ++i) {
-        kij0[i] = new Big[num_participants];
-        kij1[i] = new Big[num_participants];
-    }
-    Big* randomk = new Big[num_participants];
-    // randomValue(num_participants, p0, randomk); 
-    Big onlyk = rand(p0);
-    for (int i = 0; i < num_participants; ++i) {
-        randomk[i] = onlyk;
-    }
-    Frandom(num_participants, p0, UL1, kij0, moduli_new, randomk);
-    Frandom(num_participants, p0, UL2, kij1, moduli_new, randomk);
-    add_share(num_participants, kij0, moduli_new, ki0);
-    add_share(num_participants, kij1, moduli_new, ki1);
-}
-
-void Fmult(int num_participants, Big* Xi, Big* Yi, Big moduli_new[], Big* pointopi){
-    for(int i=0;i<num_participants;i++){
-        pointopi[i] = Xi[i] * Yi[i];
-        pointopi[i] %= moduli_new[i];
-    }
-}
-
-void Fopen(int num_participants, Big p0, Big UL, Big* zeroi, Big* outi, Big moduli_new[], Big &zerout_s,
-    int* chosen_indexes,int num_chosen){
-    Big zerouti[num_participants];
-    //([0]i+[out]i) mod pi as the secret shares of 0+out
-    for (int i = 0; i < num_chosen; ++i) {
-        zerouti[chosen_indexes[i]] = zeroi[chosen_indexes[i]]+ outi[chosen_indexes[i]];
-        zerouti[chosen_indexes[i]] %= moduli_new[chosen_indexes[i]];
-        // cout << "zerouti[i]" << zerouti[chosen_indexes[i]] << endl;
-    }
-    // reconstruct 0+out
-    Big zerout_S = recoverSecret(zerouti, chosen_indexes, num_chosen, moduli_new);
-    zerout_s = recoverOriginalSecret(zerout_S, p0);
-    // cout << "zerout_s:" << zerout_s << endl;
-}
-
 /* compute sigmai0 and sigmai1 of ECDSA in presign phase  */
-void preSign(int num_participants, Big q, Big theta, Big* ri, Big* deltai, Big moduli_new[], Big &l_x, Big* sigmai0, Big* sigmai1){
+void preSign(int num_participants){
     Big theta_inv;
     theta_inv = inverse(theta, q); 
-    for (int i = 0; i < num_participants; ++i) {
-        sigmai0[i] = theta_inv;
-        sigmai0[i] *= ri[i];
-        // sigmai0[i] %= moduli_new[i];
-        sigmai1[i] = l_x;
-        sigmai1[i] *= theta_inv;
-        sigmai1[i] *= deltai[i];
-        // sigmai1[i] %= moduli_new[i];
-    }
 }
 
 /* imitate randomly participates  */
@@ -387,15 +168,6 @@ void choose_party(int threshold, int* chosen_indexes){
     // random number generator
     irand(time(0));
     int count = 0; // randomly selected threshold participants index
-    while (count < threshold) {
-        big random_value = mirvar(0);
-        bigrand(mirvar(threshold), random_value); // generate random value within range [0, threshold)
-        int index = size(random_value);  // translating random Big to int
-        if (!selected[index ]) {         // check whether selected
-            selected[index] = true;     // mark it selected
-            chosen_indexes[count] = index; // storage selected index
-            count++;
-        }
     }
 }
 
@@ -424,106 +196,6 @@ void gen_sigma(const char * mi, int num_participants, int threshold, int namda, 
     // cout << "Enter 9 digit random number seed  = ";
     // cin >> seed;
     irand(369266);
-
-// get common data 
-    common >> bits;
-    common >> p >> a >> b >> q >> x >> y;
-    ecurve(a,b,p,MR_PROJECTIVE);
-    G=ECn(x,y);
-
-// get public key of signer 
-    public_key >> ep >> x;
-    PK=ECn(x,ep);         // decompress
-    // PK=ECn(xx,yy);
-
-// get private key of recipient 
-    private_key >> secret;
-    // cout << "secret:" << secret << "\n";
-
-// allocate modulus memory
-    big* moduli = new big[num_participants];
-    for (int i = 0; i < num_participants; ++i) moduli[i] = mirvar(0);
-
-// generate modulus
-    if (!generate_moduli(num_participants, bit_lengths, moduli, q)) cout << "Modulus generation failure." << endl;
-    for (int i = 0; i < num_participants; ++i) moduli_new[i]=moduli[i];
-
-    Big P_A, PA_Ba;
-    Big L=1; 
-    compute_PA_PABa(moduli_new, num_participants, maxt, mint, P_A, PA_Ba);
-    L <<= (threshold+namda);
-    UL = generate_ul(L);
-
-    Big S = liftSecret(secret, q, UL); // generate S = s + p0 * UL
-
-    // distribute shares of secret
-    Big ski[num_participants];
-    distributesk(S, num_participants, ski, moduli_new);
-
-    Big* randV_ri = new Big[num_participants];
-    Big** rij = new Big*[num_participants];
-    for (int i = 0; i < num_participants; ++i) {
-        rij[i] = new Big[num_participants];
-    }
-    Big* ri = new Big[num_participants];
-    Big* randV_li = new Big[num_participants];
-    Big** lij = new Big*[num_participants];
-    for (int i = 0; i < num_participants; ++i) {
-        lij[i] = new Big[num_participants];
-    }
-    Big* li = new Big[num_participants];
-    Big l_sum = 0;
-
-    Big* ki0 = new Big[num_participants]; Big* ki1 = new Big[num_participants];
-    Big* thetai = new Big[num_participants]; Big* deltai = new Big[num_participants];
-
-// generate ri,li
-    randomValue(num_participants, q, randV_ri);
-    randomValue(num_participants, q, randV_li);
-    for(int i=0;i<num_participants;i++) l_sum += randV_li[i];
-
-// [r]i <-- Frandom(ri);  [l]i <-- Frandom(li)
-    Frandom(num_participants, q, UL, rij, moduli_new, randV_ri); 
-    add_share(num_participants, rij, moduli_new, ri);
-    Frandom(num_participants, q, UL, lij, moduli_new, randV_li); 
-    add_share(num_participants, lij, moduli_new, li);
-
-    Fdeg(num_participants, q, moduli_new, ki0, ki1, threshold,namda,UL);
-
-// [theta_i]=Fmult(ri*li), [delta_i]=Fmult(ri*ski)
-    Fmult(num_participants, ri, li, moduli_new, thetai);
-    Fmult(num_participants, ri, ski, moduli_new, deltai);
-    for(int i=0;i<num_participants;i++){
-        // cout << "thetai:" << thetai[i] << endl;
-        // cout << "deltai:" << deltai[i] << endl;
-    }
-// generate shares of 0--Frandom
-    Big Lzero=1;
-    Lzero <<= (threshold+3*namda);
-    Big ULzero = generate_ul(Lzero);
-    for(int i =0;i<num_participants;i++){ 
-        Big zero_S = liftSecret((Big)0, q, ULzero);
-        zeroi[i]=zero_S % moduli_new[i];
-        // cout << "0 shares：" << zeroi[i] << endl;
-    }
-
-// select threshold shares of authorized set
-    choose_party(threshold, chosen_indexes);
-// simulate multiple randomized participates
-    for (int i = 0; i < threshold; ++i) cout << chosen_indexes[i] << " ";
-    cout << endl;     
-// compute theta
-    Big theta;
-    Fopen(num_participants,q,UL,zeroi,thetai,moduli_new,theta,chosen_indexes,threshold);
-    cout << "theta:" << theta << endl;
-
-// calculate L_x - this can be done off-line,and hence amortized to almost nothing
-    Lg = l_sum * G;       
-    Lg.get(L_x); //compute x abscissa of point l_G
-    L_x%=q; 
-
-    preSign(num_participants, q, theta, ri, deltai, moduli_new, L_x, sigmai0, sigmai1);    
-}
 
 /* generate secret keys of vehicle */
 struct gen_sk_pk {
@@ -555,14 +227,7 @@ void aes_enc_cbc(char* ichar, Big Wf_x, char* ciphertext, int& ciphertext_len){
     int padded_len = len + (16 - (len % 16)); // pad to 填充到16的倍数
     char* padded_plaintext = new char[padded_len + 1];
     // copy plaintext and padding it 
-    memcpy(padded_plaintext, ichar, len);
-    memset(padded_plaintext + len, 16 - (len % 16), padded_len - len); // PKCS7 padding
-    padded_plaintext[padded_len] = '\0'; // null terminator for safety
-    for (int i = 0; i < padded_len; i += 16) {
-        aes_encrypt(&a, padded_plaintext + i); // encrypt each block
-    }
-    memcpy(ciphertext, padded_plaintext, padded_len); //copy encrypt result
-    ciphertext_len = padded_len;
+
 
     delete[] padded_plaintext;
 }
@@ -573,12 +238,6 @@ bool aes_dec_cbc(char* ciphertext, int ciphertext_len, Big Wf_x, char* plaintext
     char key[32];
     to_binary(Wf_x, 32, key); // translate key to char arrays
     aes_init(&a, MR_CBC, 32, key, iv);
-    for (int i = 0; i < ciphertext_len; i += 16) {
-        aes_decrypt(&a, const_cast<char*>(ciphertext) + i); // decrypt each block
-    }
-    int padding = ciphertext[ciphertext_len - 1];
-    memcpy(plaintext, ciphertext, ciphertext_len - padding);
-    plaintext[ciphertext_len - padding] = '\0'; // null terminator for safety
     return 0;
 }
 
@@ -601,20 +260,6 @@ void Fog_resp(Big q, ECn G,Big randvalue_k, ECn k_R, ECn VPKm, const char* join,
     char plaintext[200];
     strncpy(plaintext, istring.c_str(), sizeof(plaintext) - 1); // Copy string
     plaintext[sizeof(plaintext) - 1] = '\0';
-
-    if (left == right){
-        cout << "Message M1 verification, fog agree request" << endl;
-        ECn Wf = fskj * VPKm;
-        Big Wf_x, k_r;
-        Wf.get(Wf_x); 
-        aes_enc_cbc(plaintext,Wf_x,encm,ciplen);
-        Tm2 = getCurTimestamp();
-        k_R.get(k_r);
-        k_r%=q;
-        Big hsignf = h_signf(encm, FPKj, Tm2, q);
-        sign_ecdsa(randvalue_k, q, hsignf, fskj, k_r, Signf);
-    } 
-    else cout << "Message M1 not verification, fog not agree" << endl;
 }
 
 
@@ -622,14 +267,6 @@ bool verify(Big r, Big s, Big q, Big h, ECn Pub, ECn G){
     Big u1,u2,v;
     ECn RR;
     if (r>=q || s>=q) cout << "Signature NOT verified" << endl;
-    Big s_inv=inverse(s,q);
-    u1=(h*s_inv)%q;
-    u2=(r*s_inv)%q;
-    RR=mul(u2,Pub,u1,G);
-    // G=mul(u2,Pub,u1,G);
-    RR.get(v);
-    v%=q;
-
     if (v==r){
         cout << "Signature verification for message M2" << endl; return 1;}
     else{cout << "Signature not verified for message M2"<< endl; return 0;}
@@ -648,13 +285,7 @@ const char* joint_message(ECn VPKi, const char *mi, Big Ti2, size_t &total_messa
     VPKi.getxy(VPKix,VPKiy);
     char *VPKix_char=new char[POINTXY_BYTESIZE],*VPKiy_char=new char[POINTXY_BYTESIZE],
             *ti2_char=new char[POINTXY_BYTESIZE];
-    VPKix_char<<VPKix;
-    VPKiy_char<<VPKiy;
-    ti2_char<<Ti2;
-    total_message_len = sizeof(VPKix_char) + sizeof(VPKiy_char) + sizeof(ti2_char) + strlen(mi);   
-    const string str=string(VPKix_char)+string(VPKiy_char)+string(ti2_char)+string(mi);
-    const char *total_char=str.c_str();
-    // cout << "total_char in joint_message:" << total_char << endl;
+
     return total_char;
 }
 
@@ -698,11 +329,6 @@ Big hex_string_to_big(const char* hexString) {
     int hexLength = strlen(hexString);
     int binaryLength = hexLength / 2;  // Each byte is represented by two hex characters
     char* binaryArray = new char[binaryLength];
-    // Convert the hex string to a binary array
-    hex_to_binary(hexString, binaryArray, binaryLength);
-    // Convert binary array to Big
-    Big bigValue = from_binary(binaryLength, binaryArray);
-    // Clean up memory
     delete[] binaryArray;
     return bigValue;
 }
@@ -713,10 +339,6 @@ bool verify_hmac_sha256(Big gskfj, Big Ti2, ECn VPKi, const char* mi, unsigned c
     size_t total_message_len;  
     //joint all message
     const char* total_message = joint_message(VPKi, mi, Ti2, total_message_len);
-    string hex_message = to_hex(total_message, total_message_len);
-    // compute HMAC   
-    calculate_hmac_sha256(gskfj, (const unsigned char *)total_message, total_message_len, hmac); 
-    // compare calculated HMAC with expected HMAC 
     return (memcmp(hmac, expected_hmac, EVP_MD_size(EVP_sha256())) == 0);
 
 }
@@ -725,13 +347,6 @@ bool verify_hmac_sha256(Big gskfj, Big Ti2, ECn VPKi, const char* mi, unsigned c
 void compute_thre_sig(const char* mi,Big q,int num_participants,Big* sigmai0,Big* sigmai1,Big moduli_new[], Big *sigmai){
     // get message 
     Big h = getmsghash(mi,q); 
-    // calculate signature--threshold 
-    cout << "Threshold signature of each participant:" << endl;
-    for (int i = 0; i < num_participants; ++i) {
-        sigmai[i] = h * sigmai0[i] + sigmai1[i];
-        sigmai[i] %= moduli_new[i];
-        // cout << "sigmai" << i << ":" << sigmai[i] << endl;
-    }
 }
 
 const char* joint_message_h(Big q,const char *mi, char* enc_sigmah, Big Th, int &total_message_len){
@@ -752,38 +367,6 @@ struct return_sigi{
     Big sigi;
 };
 
-/* collect threshold signatures  */
-return_sigi collect_sign(const char* mi,int num_participants, Big q, Big UL, ECn G, Big *zeroi, Big moduli_new[], Big* sigmai, Big &sigma,
-    ECn Lg, int sign_thre,int* chosen_indexes,Big gskfj,Big all_Th[],char** ciphertext,unsigned char** all_Tagh){
-    //verify Tag of all vehicles h
-    unsigned char Tagh[EVP_MAX_MD_SIZE]; int i;
-    for(i=0;i<num_participants;i++){
-        int total_message_len;  
-        //joint all message
-        const char *total_message = joint_message_h(q,mi, ciphertext[i], all_Th[i], total_message_len);
-        string hex_message = to_hex(total_message, total_message_len);
-        // compute HMAC   
-        calculate_hmac_sha256(gskfj, (const unsigned char *)total_message, total_message_len, Tagh); 
-        // cout << "Tagh:" << Tagh << endl;
-        // cout << "all_Tagh:" << all_Tagh[i] << endl;
-        if(memcmp(Tagh, all_Tagh[i], EVP_MD_size(EVP_sha256()))==0) continue;
-        else break;
-    }
-    if (i==num_participants) cout << "All hmac for vehicle_h verification--message M4." << endl;
-    else cout << "Hmac for vehicle_h not verified--message M4." << endl;
-
-    // aggregate threshold signature shares 
-    Fopen(num_participants,q,UL,zeroi,sigmai,moduli_new,sigma,chosen_indexes,sign_thre);
-    cout << "sigma:" << sigma << endl;
-    gen_sk_pk Ai = getValues(G,q);
-    gen_sk_pk vehi2 = getValues(G,q);
-    Big vski2 = vehi2.sk;
-    ECn VPKi2 = vehi2.pk;
-    Big Ti =getCurTimestamp(); 
-    Big hsi = h2(mi, Ai.pk, VPKi2, sigma, Lg, Ti, q);
-    Big sigi = Ai.sk + (vski2 * hsi) % q;
-    return {Ai.pk,VPKi2,sigma,Lg,Ti,sigi};
-}
 
 /* verify threshold signature, message M5 */
 void msg_verify(const char* mi,ECn Ai,ECn VPKi2,Big sigma,ECn Lg,Big Ti,Big sigi,Big q,ECn G,ECn pkfj){
@@ -797,31 +380,11 @@ void msg_verify(const char* mi,ECn Ai,ECn VPKi2,Big sigma,ECn Lg,Big Ti,Big sigi
     if (left == right) cout << "Signture verification for message M5." << endl;
     else cout << "Signature not verified for message M5." << endl;
 
-    Big hash_mi = getmsghash(mi,q);
-    Big sigma_inv = inverse(sigma,q);
-    Big l_x,thre_right_x;
-    Lg.get(l_x);
-    l_x %= q;
-
-    ECn thre_right1 = G;
-    thre_right1 *= sigma_inv;
-    thre_right1 *= hash_mi;
-    ECn thre_right2 = pkfj;
-    thre_right2 *= sigma_inv;
-    thre_right2 *= l_x;
-    ECn thre_right;
-    thre_right += thre_right1;
-    thre_right += thre_right2;
-    thre_right.get(thre_right_x);
-    thre_right_x %= q;
-
     if (l_x == thre_right_x) cout << "Threshold signature verification." << endl;
     else cout << "Threshold signature not verified." << endl;
 }
 
-return_sigi veh_get_param(Big q,Big UL,Big* zeroi,ECn G,const char* mi,int num_participants,Big sigmai0[],
-    Big sigmai1[],Big moduli_new[],ECn Lg,ECn pkfj,int sign_thre,int* chosen_indexes,ECn k_R,char *encm, 
-    int ciphertext_len, Big Tm2,Big Signf,ECn FPKj,Big vskm,gen_sk_pk VPKi_sk_pk,Big vskh[],ECn VPKh[]){
+return_sigi veh_get_param(Big q,Big UL){
     char decm[160]; unsigned char hmac[EVP_MAX_MD_SIZE];
     ECn Wf = vskm * FPKj;
     Big Wf_x,k_r,gskfj,Ti2,Wistar_x,Th,sigma;
@@ -845,29 +408,6 @@ return_sigi veh_get_param(Big q,Big UL,Big* zeroi,ECn G,const char* mi,int num_p
     // cout << "Ti2:" << Ti2 << endl;
     // cout << "hmac returned:" << hmac << endl;
     // cout << "gskfj:" << gskfj <<endl;
-    bool is_valid = verify_hmac_sha256(gskfj,Ti2,VPKi,mi,hmac);
-    if(is_valid) cout << "HMAC is valid for message M3." << endl;
-    else cout << "HMAC is invalid for message M3." << endl;
-    Big* sigmai = new Big[num_participants];char** ciphertext = new char*[num_participants];
-    int* ciph_len = new int[num_participants]; unsigned char* all_Tagh[EVP_MAX_MD_SIZE];
-    unsigned char Tagh[EVP_MAX_MD_SIZE]; Big all_Th[num_participants];
-    compute_thre_sig(mi,q,num_participants,sigmai0,sigmai1,moduli_new,sigmai);
-    for(int i=0;i<num_participants;i++){
-        ECn Wistar = vskh[i] * VPKi;
-        char sigmai_char[32]; char cip_temp[200];
-        Wistar.get(Wistar_x);
-        to_binary(sigmai[i],32,sigmai_char);
-        aes_enc_cbc(sigmai_char, Wistar_x, cip_temp, ciph_len[i]);
-        ciphertext[i]=cip_temp;    
-        int total_message_len;  
-        Th = getCurTimestamp();
-        const char *total_message = joint_message_h(q,mi, cip_temp, Th, total_message_len);
-        string hex_message = to_hex(total_message, total_message_len); 
-        calculate_hmac_sha256(gskfj, (const unsigned char *)total_message, total_message_len, Tagh); 
-        all_Tagh[i] = Tagh;
-        all_Th[i] = Th;
-    }
-    return_sigi returnSig= collect_sign(mi,num_participants,q,UL,G,zeroi,moduli_new,sigmai,sigma,Lg,sign_thre,chosen_indexes,gskfj,all_Th,ciphertext,all_Tagh);
     // cout << "sigi_returnSig:" << returnSig.Ai << endl;
     // cout << "sigi_returnSig:" << returnSig.VPKi2 << endl;
     // cout << "sigi_returnSig:" << returnSig.sigma << endl;
@@ -961,30 +501,6 @@ int  main() {
         gen_sigma(mi,num_participants,threshold,namda,q,UL,L_x,sigmai0,sigmai1,G,PK,moduli_new,zeroi,Lg,maxt,mint,chosen_indexes);
 
     // generate communication private and public key of vehicle
-        gen_sk_pk vehm = getValues(G,q);
-        gen_sk_pk vehi = getValues(G,q);
-        for(int i=0;i<num_participants;i++){
-            gen_sk_pk vehh = getValues(G,q);
-            vehh_sk[i] = vehh.sk;
-            vehh_pk[i] = vehh.pk;
-        }
-    // generate communication private and public key of fog node
-        gen_sk_pk fogj = getValues(G,q);
-    // generate one-time random value and public key
-        gen_sk_pk k_R = getValues(G,q);
-    // vehicle group formation
-        req_vehgroup(q,G,vehm.sk,vehm.pk,join,Xm,Tm1,pdm);
-        Fog_resp(q,G,k_R.sk,k_R.pk,vehm.pk,join,Xm,Tm1,pdm,fogj.sk,fogj.pk,encm,ciphertext_len,Tm2,Signf,gskfj);
-        return_sigi returnParam=veh_get_param(q,UL,zeroi,G,mi,num_participants,sigmai0,sigmai1,moduli_new,
-            Lg,PK,threshold,chosen_indexes,k_R.pk,encm,ciphertext_len,Tm2,Signf,fogj.pk,vehm.sk,vehi,vehh_sk,vehh_pk);
-        
-        Ai_set[j] = returnParam.Ai;
-        VPKi2_set[j] = returnParam.VPKi2;
-        sigma_set[j] = returnParam.sigma;
-        Lg_set[j] = returnParam.Lg;
-        Ti_set[j] = returnParam.Ti;
-        sigi_set[j] = returnParam.sigi;
-    }
 
     batchverifytest(num,G,q,mi,Ai_set,VPKi2_set,sigma_set,Lg_set,Ti_set,sigi_set);
 
